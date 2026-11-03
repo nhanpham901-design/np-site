@@ -1,0 +1,26 @@
+:root {
+  /* Shadows — soft, low-contrast; light mode only. Dark mode leans on borders instead. */
+  --shadow-xs: 0 1px 2px oklch(0% 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px oklch(0% 0 0 / 0.06), 0 1px 2px oklch(0% 0 0 / 0.04);
+  --shadow-md: 0 4px 12px oklch(0% 0 0 / 0.07), 0 1px 3px oklch(0% 0 0 / 0.04);
+  --shadow-lg: 0 12px 32px oklch(0% 0 0 / 0.10), 0 2px 6px oklch(0% 0 0 / 0.05);
+
+  /* Focus ring — always the green accent, offset so rounded corners stay legible */
+  --focus-ring: 0 0 0 var(--focus-ring-width) var(--accent-primary-surface), 0 0 0 1px var(--accent-primary);
+
+  /* Motion — quick, unfussy; no bounce */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+  --duration-slow: 280ms;
+  --transition-base: all var(--duration-base) var(--ease-out);
+}
+
+[data-theme="dark"] {
+  --shadow-xs: 0 1px 2px oklch(0% 0 0 / 0.4);
+  --shadow-sm: 0 1px 3px oklch(0% 0 0 / 0.5);
+  --shadow-md: 0 4px 14px oklch(0% 0 0 / 0.55);
+  --shadow-lg: 0 14px 36px oklch(0% 0 0 / 0.6);
+  --focus-ring: 0 0 0 var(--focus-ring-width) var(--accent-primary-surface), 0 0 0 1px var(--accent-primary);
+}

@@ -1,0 +1,118 @@
+/* Neutrals: near-black text, true-neutral scale (chroma ~0) for max flexibility with green + pink accents */
+:root {
+  --neutral-0: oklch(99.2% 0.002 260);
+  --neutral-25: oklch(98% 0.002 260);
+  --neutral-50: oklch(96.2% 0.002 260);
+  --neutral-100: oklch(93% 0.003 260);
+  --neutral-200: oklch(87% 0.003 260);
+  --neutral-300: oklch(78% 0.003 260);
+  --neutral-400: oklch(65% 0.003 260);
+  --neutral-500: oklch(53% 0.003 260);
+  --neutral-600: oklch(43% 0.003 260);
+  --neutral-700: oklch(34% 0.003 260);
+  --neutral-800: oklch(25% 0.003 260);
+  --neutral-900: oklch(18% 0.003 260);
+  --neutral-950: oklch(13% 0.003 260);
+
+  /* Accent — green (source hex is the anchor; tints/shades derived in oklch) */
+  --green-500: #37af07;
+  --green-50: oklch(from var(--green-500) 0.97 0.025 h);
+  --green-100: oklch(from var(--green-500) 0.93 0.05 h);
+  --green-200: oklch(from var(--green-500) 0.86 0.09 h);
+  --green-300: oklch(from var(--green-500) 0.76 0.135 h);
+  --green-400: oklch(from var(--green-500) 0.685 0.165 h);
+  --green-600: oklch(from var(--green-500) calc(l - 0.08) c h);
+  --green-700: oklch(from var(--green-500) calc(l - 0.16) calc(c * 0.92) h);
+  --green-800: oklch(from var(--green-500) calc(l - 0.24) calc(c * 0.8) h);
+  --green-900: oklch(from var(--green-500) calc(l - 0.32) calc(c * 0.65) h);
+
+  /* Primary accent — pink/magenta */
+  --pink-500: #d6067f;
+  --pink-50: oklch(from var(--pink-500) 0.97 0.02 h);
+  --pink-100: oklch(from var(--pink-500) 0.93 0.045 h);
+  --pink-200: oklch(from var(--pink-500) 0.86 0.08 h);
+  --pink-300: oklch(from var(--pink-500) 0.76 0.13 h);
+  --pink-400: oklch(from var(--pink-500) 0.66 0.175 h);
+  --pink-600: oklch(from var(--pink-500) calc(l - 0.06) c h);
+  --pink-700: oklch(from var(--pink-500) calc(l - 0.13) calc(c * 0.92) h);
+  --pink-800: oklch(from var(--pink-500) calc(l - 0.2) calc(c * 0.8) h);
+  --pink-900: oklch(from var(--pink-500) calc(l - 0.27) calc(c * 0.65) h);
+
+  /* Danger — PROVISIONAL, not owner-supplied. Needed because error/invalid states
+     previously borrowed the pink accent, which is now the primary. See readme. */
+  --red-500: oklch(58% 0.2 25);
+  --red-50: oklch(from var(--red-500) 0.97 0.02 h);
+  --red-200: oklch(from var(--red-500) 0.86 0.08 h);
+  --red-400: oklch(from var(--red-500) 0.68 0.16 h);
+  --red-600: oklch(from var(--red-500) calc(l - 0.06) c h);
+  --red-800: oklch(from var(--red-500) calc(l - 0.2) calc(c * 0.8) h);
+
+  /* Semantic — light mode (default) */
+  --bg: var(--neutral-0);
+  --bg-surface: var(--neutral-25);
+  --bg-surface-raised: oklch(100% 0 0);
+  --fg: var(--neutral-950);
+  --fg-secondary: var(--neutral-600);
+  --fg-tertiary: var(--neutral-400);
+  /* Long-form quote text: deliberately one step stronger than --fg-secondary.
+     Pairs to a matched-contrast light value in dark mode (~9.5:1 both ways). */
+  --fg-quote: var(--neutral-700);
+  /* Identity eyebrow in the nav: a quiet subtitle under the name, one step back from
+     --fg but still body-legible. Matched contrast in dark mode (~8:1 both ways). */
+  --fg-identity: var(--neutral-700);
+  /* Decorative quote glyph — deliberately low contrast in BOTH modes (it is ornament,
+     not content, so it is exempt from text contrast minimums). Light mode tints up
+     from the page; dark mode tints down from it. */
+  --fg-quote-mark: var(--neutral-200);
+  --border: var(--neutral-200);
+  --border-strong: var(--neutral-300);
+
+  --accent-primary: var(--pink-600);
+  /* solid fill + its label: pink-600 clears AA (~5:1) against white text */
+  --accent-primary-solid: var(--pink-600);
+  --accent-primary-on-solid: oklch(100% 0 0);
+  --accent-primary-surface: var(--pink-50);
+  --accent-primary-border: var(--pink-200);
+
+  /* The secondary-accent variant was RETIRED (approved 2026-08-12): one accent per
+     system. --accent-secondary* are gone; error states use --danger below. The green
+     ramp is retained and unused — it is the owner's colour, kept for future use. */
+  --danger: var(--red-600);
+  --danger-surface: var(--red-50);
+  --danger-border: var(--red-200);
+
+  --link: var(--pink-600);
+  --link-hover: var(--pink-700);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+[data-theme="dark"] {
+  --bg: var(--neutral-950);
+  --bg-surface: var(--neutral-900);
+  --bg-surface-raised: var(--neutral-800);
+  --fg: var(--neutral-50);
+  --fg-secondary: var(--neutral-400);
+  --fg-tertiary: var(--neutral-500);
+  --fg-quote: var(--neutral-300);
+  --fg-identity: var(--neutral-300);
+  --fg-quote-mark: var(--neutral-700);
+  --border: var(--neutral-800);
+  --border-strong: var(--neutral-700);
+
+  --accent-primary: var(--pink-400);
+  /* dark mode inverts: light fill, near-black label */
+  --accent-primary-solid: var(--pink-400);
+  --accent-primary-on-solid: var(--neutral-950);
+  --accent-primary-surface: oklch(from var(--pink-500) 0.24 0.06 h);
+  --accent-primary-border: var(--pink-800);
+
+  --danger: var(--red-400);
+  --danger-surface: oklch(from var(--red-500) 0.24 0.06 h);
+  --danger-border: var(--red-800);
+
+  --link: var(--pink-400);
+  --link-hover: var(--pink-300);
+}
