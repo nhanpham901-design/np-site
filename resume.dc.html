@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume — Nhan Pham</title>
+<meta name="description" content="Nhan Pham — product designer building design systems that outlast the launch. Previously at Adobe and Expedia.">
+<meta property="og:title" content="Resume — Nhan Pham">
+<meta property="og:description" content="Nhan Pham — product designer building design systems that outlast the launch. Previously at Adobe and Expedia.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { margin: 0; background: var(--bg); }
+  @media (max-width: 1023px) {
+    [data-stack] { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 767px) {
+    [data-page-title] { font-size: 48px !important; }
+    [data-page-lede] { font-size: 16px !important; }
+  }
+  /* Content measure: page content centers in a 1280px column at wide viewports while
+     backgrounds stay full-bleed. Gutters remain 48px. */
+  @media (min-width: 1280px) {
+    [data-wrap] {
+      padding-left: calc((100% - 1280px) / 2 + 48px) !important;
+      padding-right: calc((100% - 1280px) / 2 + 48px) !important;
+    }
+    [data-wrap-left] { margin-left: calc((100% - 1280px) / 2); }
+  }
+  /* Identity eyebrow: neutral while it sits in the nav, accent once it relocates into
+     the page header at <=768px. */
+  [data-eyebrow-slot] [data-eyebrow-nav],
+  [data-eyebrow-slot] [data-eyebrow-nav] span { color: var(--accent-primary) !important; }
+  a { color: var(--link); text-decoration: none; }  @media print {
+    [data-sticky-nav], [data-nav-sentinel], [data-print-hide] { display: none !important; }
+    [data-wrap-left] { padding-top: 0 !important; margin-left: 0 !important; }
+    [data-wrap], [data-wrap-left] { padding-left: 0 !important; padding-right: 0 !important; }
+  }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+</style>
+</helmet>
+
+<div data-theme="{{ theme }}" data-screen-label="Resume" style="min-height:100vh; background:var(--bg); color:var(--fg); font-family:var(--font-sans);">
+
+  <div data-nav-sentinel="" style="height:1px;"></div>
+  <div data-wrap="" style="position:sticky; top:0; z-index:10; display:flex; align-items:center; justify-content:space-between; gap:32px; padding:18px 48px; background:var(--bg); backdrop-filter:saturate(1.8) blur(8px); transition:var(--transition-base);" data-sticky-nav="">
+    <div data-eyebrow-home="" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px;">
+      <a href="index.dc.html" style="font-family: var(--font-display); font-size: 22px; font-weight: 700; letter-spacing: -0.01em; color: var(--fg)">Nhan Pham</a>
+      <div data-eyebrow-nav="" style="font-size: 13px; letter-spacing: 0.02em; color: var(--fg-identity); text-align: left">Product Designer · Design Systems&nbsp;<span style="color: var(--fg-identity);">· San Francisco Bay Area</span></div>
+    </div>
+    <div style="display:flex; align-items:center; gap:28px;">
+      <a href="index.dc.html#work" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">Work</a>
+      <a href="resume.dc.html" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">Resume</a>
+      <a href="https://www.linkedin.com/in/nhan-pham/" target="_blank" rel="noopener" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">LinkedIn</a>
+      <a data-cta="" href="mailto:nhanpham901@gmail.com" style="display:inline-flex; align-items:center; height:var(--control-h-sm); padding:0 var(--space-4); font-size:13px; font-weight:600; border-radius:var(--radius-md); background:var(--accent-primary-solid); color:var(--accent-primary-on-solid);" style-hover="filter:brightness(0.94)">Email Nhan</a>
+    </div>
+  </div>
+
+  <div data-wrap-left="" style="padding: 80px 48px var(--space-12); max-width: 760px; display: none; flex-direction: column; gap: var(--space-6)">
+    <div data-eyebrow-slot="" style="display: none;"></div>
+    <h1 data-page-title="" style="margin: 0; font-family: var(--font-display); font-size: 56px; font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; color: var(--fg); text-wrap: balance; display: none">Nhan Pham</h1>
+    <div data-page-lede="" style="font-size: 19px; line-height: 1.6; color: var(--fg-secondary); text-wrap: pretty; display: none">Ten years between product design and design systems, most recently scaling an enterprise library across three core platforms at Adobe.</div>
+  </div>
+
+  <div data-wrap-left="" style="padding:var(--space-12) 48px var(--space-24);">
+    <div data-stack="" style="display:grid; grid-template-columns:minmax(0, 760px) minmax(0, 260px); gap:var(--space-16); align-items:start;">
+
+      <div style="display:flex; flex-direction:column; gap:var(--space-16);">
+
+        <div data-print-hide="" style="display:flex;">
+          <a href="assets/Nhan-Pham-Resume-2026.pdf" download="Nhan-Pham-Resume-2026.pdf" data-cta="" style="text-decoration:none; display:inline-flex; align-items:center; gap:var(--space-2); background:transparent; font-family:inherit; font-size:14px; font-weight:600; height:var(--control-h-md); padding:0 var(--space-5); border-radius:var(--radius-md); border:1px solid var(--border-strong); color:var(--fg); cursor:pointer; text-decoration:none; transition:var(--transition-base);" style-hover="border-color:var(--accent-primary); color:var(--accent-primary); text-decoration:none"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8"></path><path d="M4.5 7.5 8 11l3.5-3.5"></path><path d="M2.5 13h11"></path></svg>Download resume</a>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:var(--space-8);">
+          <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg); border-bottom:1px solid var(--border); padding-bottom:var(--space-4);">Experience</h2>
+
+          <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+            <div data-strong="" style="display:flex; flex-wrap:wrap; align-items:baseline; gap:8px; font-size:17px; font-weight:600; color:var(--fg);">Adobe<span data-regular="" style="font-weight:400; color:var(--fg-tertiary);">San Jose, CA</span></div>
+            <div style="display:flex; flex-direction:column; gap:var(--space-1);">
+            <div style="font-size:15px; line-height:1.6; color:var(--fg);">Staff Designer, Feb 2024 - Nov 2025 (1 year and 9 months)</div>
+            <div style="font-size:15px; line-height:1.6; color:var(--fg);">Senior UX Designer, May 2022 - Feb 2024 (1 year 9 months)</div>
+            </div>
+            <div style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Scaled an enterprise library of workflows across multiple teams and 3 core platforms: Administration, Commerce, and Identity.</div>
+            <div style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Under 4 months, unified zero-to-one Adobe GenStudio by delivering core standards, components, and aligned cross-org teams in time for the General Availability Release.<br></div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+            <div data-strong="" style="display:flex; flex-wrap:wrap; align-items:baseline; gap:8px; font-size:17px; font-weight:600; color:var(--fg);">NextDeavor<span data-regular="" style="font-weight:400; color:var(--fg-tertiary);">Remote, CA</span></div>
+            <div style="font-size:15px; line-height:1.6; color:var(--fg);">Senior UX Designer, Aug 2021 - May 2022 (9 months)</div>
+            <div style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Contract with Adobe, leading design on the Genuine team. Unified invalid product's messaging experiences using design strategy, language, and design systems. Launched on app, web, and operational interfaces</div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+            <div data-strong="" style="display:flex; flex-wrap:wrap; align-items:baseline; gap:8px; font-size:17px; font-weight:600; color:var(--fg);">Expedia Group<span data-regular="" style="font-weight:400; color:var(--fg-tertiary);">San Francisco, CA</span></div>
+            <div style="display:flex; flex-direction:column; gap:var(--space-1);">
+            <div style="font-size:15px; line-height:1.6; color:var(--fg);">UX Designer II, May 2018 - Feb 2021 (2 years 10 months)</div>
+            <div style="font-size:15px; line-height:1.6; color:var(--fg);">UX App Design Intern, Jun 2017 - Sept 2017 (4 months)</div>
+            </div>
+            <div style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Contributor to in-trip experiences and EG's design system. Led and launched app experiences, like: Contactless check-in, know before you go, activity recommendations, notification center</div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:var(--space-8);">
+          <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg); border-bottom:1px solid var(--border); padding-bottom:var(--space-4);">Education</h2>
+
+          <div style="display:flex; flex-direction:column; gap:var(--space-3);">
+            <div data-strong="" style="display:flex; flex-wrap:wrap; align-items:baseline; gap:8px; font-size:17px; font-weight:600; color:var(--fg);">Academy of Art University<span data-regular="" style="font-weight:400; color:var(--fg-tertiary); font-variant-numeric:tabular-nums;">Jun 2016 - May 2018</span></div>
+            <div style="font-size:16px; line-height:1.6; color:var(--fg-secondary);">Master of Art in Web Design &amp; New Media</div>
+            <div style="font-size:15px; line-height:1.6; color:var(--fg-tertiary); text-wrap:pretty;">Courses include: UX Principles and Mobile Web Technology</div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:var(--space-3);">
+            <div data-strong="" style="display:flex; flex-wrap:wrap; align-items:baseline; gap:8px; font-size:17px; font-weight:600; color:var(--fg);">University of Texas at Arlington<span data-regular="" style="font-weight:400; color:var(--fg-tertiary); font-variant-numeric:tabular-nums;">Aug 2012 - May 2016</span></div>
+            <div style="font-size:16px; line-height:1.6; color:var(--fg-secondary);">Bachelor of Art in Visual Communications</div>
+            <div style="font-size:15px; line-height:1.6; color:var(--fg-tertiary); text-wrap:pretty;">Courses include: Typography, Web Design, and App Design</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:var(--space-12);">
+
+        <div style="display:flex; flex-direction:column; gap:var(--space-5);">
+          <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg); border-bottom:1px solid var(--border); padding-bottom:var(--space-4);">Skills</h2>
+          <div style="display:flex; flex-direction:column; gap:var(--space-3);">
+            <div style="font-size:15px; line-height:1.5; color:var(--fg-secondary);">Governance and contribution models</div>
+            <div style="font-size:15px; line-height:1.5; color:var(--fg-secondary);">Development comprehension</div>
+            <div style="font-size:15px; line-height:1.5; color:var(--fg-secondary);">Evolve practices, tools, artifacts</div>
+            <div style="font-size:15px; line-height:1.5; color:var(--fg-secondary);">Evangelize framework adoption</div>
+            <div style="font-size:15px; line-height:1.5; color:var(--fg-secondary);">Train design systems thinking</div>
+            <div style="font-size:15px; line-height:1.5; color:var(--fg-secondary);">Partnership with stakeholders</div>
+            <div style="font-size:15px; line-height:1.5; color:var(--fg-secondary);">Navigating ambiguity</div>
+            <div style="font-size:15px; line-height:1.5; color:var(--fg-secondary);">Token architecture</div>
+            <div style="font-size:15px; line-height:1.5; color:var(--fg-secondary);">Design–engineering specs</div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:var(--space-5);">
+          <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg); border-bottom:1px solid var(--border); padding-bottom:var(--space-4);">Tools</h2>
+          <div style="display:flex; flex-wrap:wrap; gap:var(--space-2);">
+            <span style="font-size:13px; color:var(--fg-secondary); border:1px solid var(--border); border-radius:var(--radius-pill); padding:5px 12px;">Claude Design</span>
+            <span style="font-size:13px; color:var(--fg-secondary); border:1px solid var(--border); border-radius:var(--radius-pill); padding:5px 12px;">Figma</span>
+            <span style="font-size:13px; color:var(--fg-secondary); border:1px solid var(--border); border-radius:var(--radius-pill); padding:5px 12px;">Storybook</span>
+            <span style="font-size:13px; color:var(--fg-secondary); border:1px solid var(--border); border-radius:var(--radius-pill); padding:5px 12px;">Jira</span>
+            <span style="font-size:13px; color:var(--fg-secondary); border:1px solid var(--border); border-radius:var(--radius-pill); padding:5px 12px;">Wiki</span>
+            <span style="font-size:13px; color:var(--fg-secondary); border:1px solid var(--border); border-radius:var(--radius-pill); padding:5px 12px;">Miro</span>
+            <span style="font-size:13px; color:var(--fg-secondary); border:1px solid var(--border); border-radius:var(--radius-pill); padding:5px 12px;">Notion</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div data-wrap="" style="padding:28px 48px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+    <div style="font-size:13px; color:var(--fg-tertiary);">© 2026 Nhan Pham</div>
+    <div style="display:flex; gap:var(--space-5);">
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;lockLinks&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Editing&quot; },
+  &quot;theme&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;light&quot;, &quot;dark&quot;], &quot;default&quot;: &quot;light&quot;, &quot;tsType&quot;: &quot;'light' | 'dark'&quot; }
+}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._blockNav = e => {
+      if (!this.props.lockLinks) return;
+      const a = e.target.closest && e.target.closest('a[href]');
+      if (a) { e.preventDefault(); e.stopPropagation(); }
+    };
+    document.addEventListener('click', this._blockNav, true);
+
+    this._obs = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        const nav = e.target.nextElementSibling;
+        const stuck = !e.isIntersecting && e.boundingClientRect.top < 0;
+        if (nav) nav.style.boxShadow = stuck ? 'inset 0 -1px 0 var(--border)' : 'none';
+      }),
+      { threshold: 0 }
+    );
+
+    this._mq = window.matchMedia('(max-width: 768px)');
+    this._onMQ = () => this._placeEyebrow();
+    this._mq.addEventListener('change', this._onMQ);
+    this._placeEyebrow();
+
+    document.querySelectorAll('[data-nav-sentinel]').forEach(s => {
+      this._obs.observe(s);
+      const nav = s.nextElementSibling;
+      if (nav) nav.style.boxShadow = s.getBoundingClientRect().top < 0 ? 'inset 0 -1px 0 var(--border)' : 'none';
+    });
+  }
+
+  // One eyebrow element, relocated rather than duplicated: at <=768px the nav can't
+  // hold a second line, so the node moves into the page header slot and back.
+  _placeEyebrow() {
+    const eyebrow = document.querySelector('[data-eyebrow-nav]');
+    const heroSlot = document.querySelector('[data-eyebrow-slot]');
+    const navHome = document.querySelector('[data-eyebrow-home]');
+    if (!eyebrow || !heroSlot || !navHome) return;
+    const narrow = window.matchMedia('(max-width: 768px)').matches;
+    const target = narrow ? heroSlot : navHome;
+    if (eyebrow.parentElement !== target) target.appendChild(eyebrow);
+    heroSlot.style.display = narrow ? 'block' : 'none';
+  }
+
+  componentWillUnmount() {
+    if (this._obs) this._obs.disconnect();
+    if (this._mq) this._mq.removeEventListener('change', this._onMQ);
+    document.removeEventListener('click', this._blockNav, true);
+  }
+
+  renderVals() {
+    return {
+      theme: this.props.theme ?? 'light',
+      printResume: () => window.print(),
+    };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create a portfolio with AI — Nhan Pham</title>
+<meta name="description" content="Nhan Pham — product designer building design systems that outlast the launch. Previously at Adobe and Expedia.">
+<meta property="og:title" content="Create a portfolio with AI — Nhan Pham">
+<meta property="og:description" content="Nhan Pham — product designer building design systems that outlast the launch. Previously at Adobe and Expedia.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { margin: 0; background: var(--bg); }
+  @media (max-width: 767px) {
+    [data-page-title] { font-size: 48px !important; }
+    [data-page-lede] { font-size: 18px !important; }
+    [data-meta-row] { grid-template-columns: repeat(2, 1fr) !important; }
+  }
+  @media (max-width: 1023px) {
+    [data-stack] { grid-template-columns: 1fr !important; }
+  }
+  /* Content measure: page content centers in a 1280px column at wide viewports while
+     backgrounds stay full-bleed. Gutters remain 48px. */
+  @media (min-width: 1280px) {
+    [data-wrap] {
+      padding-left: calc((100% - 1280px) / 2 + 48px) !important;
+      padding-right: calc((100% - 1280px) / 2 + 48px) !important;
+    }
+    [data-wrap-left] { margin-left: calc((100% - 1280px) / 2); }
+  }
+  /* Identity eyebrow: neutral while it sits in the nav, accent once it relocates into
+     the page header at <=768px. */
+  [data-eyebrow-slot] [data-eyebrow-nav],
+  [data-eyebrow-slot] [data-eyebrow-nav] span { color: var(--accent-primary) !important; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+</style>
+</helmet>
+
+<div data-theme="{{ theme }}" data-screen-label="Case study — Portfolio with agents" style="min-height:100vh; background:var(--bg); color:var(--fg); font-family:var(--font-sans);">
+
+  <div data-nav-sentinel="" style="height:1px;"></div>
+  <div data-wrap="" style="position:sticky; top:0; z-index:10; display:flex; align-items:center; justify-content:space-between; gap:32px; padding:18px 48px; background:var(--bg); backdrop-filter:saturate(1.8) blur(8px); transition:var(--transition-base);" data-sticky-nav="">
+    <div data-eyebrow-home="" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px;">
+      <a href="index.dc.html" style="font-family: var(--font-display); font-size: 22px; font-weight: 700; letter-spacing: -0.01em; color: var(--fg)">Nhan Pham</a>
+      <div data-eyebrow-nav="" style="font-size: 13px; letter-spacing: 0.02em; color: var(--fg-identity); text-align: left">Product Designer · Design Systems&nbsp;<span style="color: var(--fg-identity);">· San Francisco Bay Area</span></div>
+    </div>
+    <div style="display:flex; align-items:center; gap:28px;">
+      <a href="index.dc.html#work" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">Work</a>
+      <a href="resume.dc.html" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">Resume</a>
+      <a href="https://www.linkedin.com/in/nhan-pham/" target="_blank" rel="noopener" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">LinkedIn</a>
+      <a data-cta="" href="mailto:nhanpham901@gmail.com" style="display:inline-flex; align-items:center; height:var(--control-h-sm); padding:0 var(--space-4); font-size:13px; font-weight:600; border-radius:var(--radius-md); background:var(--accent-primary-solid); color:var(--accent-primary-on-solid);" style-hover="filter:brightness(0.94)">Email Nhan</a>
+    </div>
+  </div>
+
+<div data-wrap-left="" style="padding:80px 48px var(--space-12); max-width:760px; display:flex; flex-direction:column; gap:var(--space-6);">
+    <div data-eyebrow-slot="" style="display: none;"></div>
+    <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-primary);">CASE STUDY · ZERO TO ONE</div>
+    <h1 data-page-title="" style="margin:0; font-family:var(--font-display); font-size:56px; font-weight:700; line-height:1.05; letter-spacing:-0.02em; color:var(--fg); text-wrap:balance;">Create a portfolio with AI</h1>
+    <div data-page-lede="" style="font-size:19px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Built this site’s layout and component architecture using a small set of durable principles to guide development with AI agents.</div>
+  </div>
+
+  <div data-wrap-left="" style="padding:0 48px var(--space-12);">
+    <div data-meta-row="" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:var(--space-6); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:var(--space-6) 0;">
+      <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Role</div>
+        <div style="font-size:15px; color:var(--fg);">Designer, systems owner, editor</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Partners</div>
+        <div style="font-size:15px; color:var(--fg);">Claude, Claude Design, Gemini as reviewer</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Timeline</div>
+        <div style="font-size:15px; color:var(--fg);">About 10 weeks, in 1.5-hour windows, 2026</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Scope</div>
+        <div style="font-size:15px; color:var(--fg);">Design system, layout, AI workflow</div>
+      </div>
+    </div>
+  </div>
+
+  <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-16); max-width:760px;">
+
+    <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+      <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Overview</h2>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I’m returning as a Staff designer, and knowing when and how to use AI is now a core part of the craft. So I built my portfolio with agents, as practice and as proof.</div>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">My constraint was time: about an hour and a half a day, during my toddler’s nap. Agents handled production so that window went to the parts only I could do: context, judgment, and voice.</div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+      <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Finding a tool that respects small changes</h2>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">It took four false starts across Claude, Claude Design, and Google Stitch before the workflow held. Stitch regenerated entire pages when I only wanted to change one thing, didn’t follow direction well, and made inline editing painful. I stopped using it.</div>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">That set my criteria: a small change stays a small change, and I can edit in place. Claude Design met both.</div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+      <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Deciding what to leave out</h2>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I pulled years of work out of an unpublished portfolio, then cut most of it. Work from 2020 and earlier undersold the level I’m applying for, so I led with a few recent projects that show leadership and scope instead.</div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+      <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">A loose system that hardened as I built</h2>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I didn’t design the system up front. I started with a few strong principles and kept the rest loose, so the system could follow the work instead of blocking it.</div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Principles first:</span> tokens for color, type, and spacing, plus a handful of rules, like accent never sitting next to primary.</div>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight: 600; color: var(--fg);">Name it when it repeats:</span> when I described a pattern twice, it got a name, like Feature card, Grid card, meta row, and identity eyebrow. The names gave the agent and I a shared vocabulary.</div>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Rules from real cases:</span> dark-mode contrast, breakpoints, and type hierarchy became rules only after a page broke them.</div>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">One source of truth:</span> the UI kit and the live site stay in sync on every change, documented in Foundations.</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-3); margin-top:var(--space-4);">
+        <div style="display:flex; flex-direction:column; gap:var(--space-5); background:var(--bg-surface); border-radius:var(--radius-lg); padding:var(--space-6);">
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Feature card</div>
+            <div data-stack="" style="display:grid; grid-template-columns:1.15fr 1fr; gap:24px; align-items:center; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px;">
+              <div style="border-radius:var(--radius-md); height:160px; background:var(--neutral-200); display:flex; align-items:center; justify-content:center;"><span style="font-size:12px; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">cover</span></div>
+              <div style="display:flex; flex-direction:column; gap:10px;">
+                <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--fg-tertiary);">Company · product result · year</div>
+                <div style="font-family:var(--font-display); font-size:24px; font-weight:700; line-height:1.15; letter-spacing:-0.02em; color:var(--fg);">Project name</div>
+                <div style="font-size:14px; line-height:1.6; color:var(--fg-secondary);">One or two sentences on the result.</div>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Meta row</div>
+            <div data-meta-row="" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:var(--space-4); background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-5);">
+              <div style="display:flex; flex-direction:column; gap:6px;"><div style="font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Role</div><div style="height:8px; width:70%; border-radius:4px; background:var(--neutral-200);"></div></div><div style="display:flex; flex-direction:column; gap:6px;"><div style="font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Partners</div><div style="height:8px; width:70%; border-radius:4px; background:var(--neutral-200);"></div></div><div style="display:flex; flex-direction:column; gap:6px;"><div style="font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Timeline</div><div style="height:8px; width:70%; border-radius:4px; background:var(--neutral-200);"></div></div><div style="display:flex; flex-direction:column; gap:6px;"><div style="font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Scope</div><div style="height:8px; width:70%; border-radius:4px; background:var(--neutral-200);"></div></div>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:15px; line-height:1.6; color:var(--fg-tertiary); text-wrap:pretty;">Names earned by repetition. Each became a shared word for the agent and me, then a documented spec in Foundations.</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-3); margin-top:var(--space-4);">
+        <div data-stack="" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+          <div data-theme="light" style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px; display:flex; flex-direction:column; gap:14px;">
+            <div style="font-family:var(--font-display); font-size:26px; font-weight:700; color:var(--fg);">In daylight</div>
+            <div style="font-size:14px; line-height:1.6; color:var(--fg-secondary);">Selected work, 2019–2026. <span style="color:var(--link); text-decoration:underline; text-underline-offset:2px;">Read the case study</span>.</div>
+            <div style="display:flex; gap:10px; align-items:center; margin-top:6px;">
+              <span style="font-size:13px; font-weight:600; color:var(--accent-primary-on-solid); background:var(--accent-primary-solid); border-radius:var(--radius-md); padding:9px 16px;">Get in touch</span>
+              <span style="font-size:13px; font-weight:600; color:var(--fg); background:var(--bg-surface); border:1px solid var(--border-strong); border-radius:var(--radius-md); padding:8px 16px;">Résumé</span>
+            </div>
+          </div>
+          <div data-theme="dark" style="background:var(--bg); border:1px solid var(--border-strong); border-radius:var(--radius-lg); padding:28px; display:flex; flex-direction:column; gap:14px;">
+            <div style="font-family:var(--font-display); font-size:26px; font-weight:700; color:var(--fg);">After dark</div>
+            <div style="font-size:14px; line-height:1.6; color:var(--fg-secondary);">Selected work, 2019–2026. <span style="color:var(--link); text-decoration:underline; text-underline-offset:2px;">Read the case study</span>.</div>
+            <div style="display:flex; gap:10px; align-items:center; margin-top:6px;">
+              <span style="font-size:13px; font-weight:600; color:var(--accent-primary-on-solid); background:var(--accent-primary-solid); border-radius:var(--radius-md); padding:9px 16px;">Get in touch</span>
+              <span style="font-size:13px; font-weight:600; color:var(--fg-secondary); background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:8px 16px;">Résumé</span>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:15px; line-height:1.6; color:var(--fg-tertiary); text-wrap:pretty;">One token set, two modes. Contrast rules were added once dark mode exposed them.</div>
+      </div>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">This made the work faster and the system more durable, since every rule exists because something needed it.</div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+      <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Working with AI: it suggests, I decide</h2>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Gemini reviewed my copy and I critiqued its feedback, keeping only what was accurate to the work and true to my voice. Claude built, and I reverted freely when a direction didn’t hold.</div>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Early on, I gated larger changes behind formal review and approval. Working solo, reviewing as changes landed was faster, so I stopped. With a team, I’d bring the gates back.</div>
+    </div>
+  </div>
+
+  <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-6); max-width:760px;">
+    <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Outcome</h2>
+    <div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary);">Principles first, completeness later</div>
+        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">The system grew from a few rules into named components and documented standards.</div>
+      </div>
+    <div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary);">Judgment stayed mine</div>
+        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Every cut, copy decision, and design call was reviewed by me before it shipped.</div>
+      </div>
+    <div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary);">Shipped in nap-time windows</div>
+        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">A published portfolio and a reusable design system, built an hour and a half at a time.</div>
+      </div>
+  </div>
+
+  <a data-wrap="" href="genstudio.dc.html" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-8); background:var(--bg-surface); padding:var(--space-12) 48px; text-decoration:none; transition:var(--transition-base);" style-hover="text-decoration:none; background:var(--accent-primary-surface)">
+    <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Next project</div>
+      <div style="font-family:var(--font-display); font-size:32px; font-weight:700; letter-spacing:-0.02em; color:var(--fg);">Unify GenStudio at launch</div>
+    </div>
+    <div data-cta="" style="font-size:15px; font-weight:600; color:var(--accent-primary); white-space:nowrap;">Read the case study →</div>
+  </a>
+
+  <div data-wrap="" style="padding:28px 48px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+    <div style="font-size:13px; color:var(--fg-tertiary);">© 2026 Nhan Pham</div>
+    <div style="display:flex; gap:var(--space-5);">
+      <a href="mailto:nhanpham901@gmail.com" style="font-size:13px; color:var(--fg-secondary);">Email</a>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;lockLinks&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Editing&quot; },
+  &quot;theme&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;light&quot;, &quot;dark&quot;], &quot;default&quot;: &quot;light&quot;, &quot;tsType&quot;: &quot;'light' | 'dark'&quot; }
+}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._blockNav = e => {
+      if (!this.props.lockLinks) return;
+      const a = e.target.closest && e.target.closest('a[href]');
+      if (a) { e.preventDefault(); e.stopPropagation(); }
+    };
+    document.addEventListener('click', this._blockNav, true);
+
+    this._obs = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        const nav = e.target.nextElementSibling;
+        const stuck = !e.isIntersecting && e.boundingClientRect.top < 0;
+        if (nav) nav.style.boxShadow = stuck ? 'inset 0 -1px 0 var(--border)' : 'none';
+      }),
+      { threshold: 0 }
+    );
+    this._mq = window.matchMedia('(max-width: 768px)');
+    this._onMQ = () => this._placeEyebrow();
+    this._mq.addEventListener('change', this._onMQ);
+    this._placeEyebrow();
+
+    document.querySelectorAll('[data-nav-sentinel]').forEach(s => {
+      this._obs.observe(s);
+      const nav = s.nextElementSibling;
+      if (nav) nav.style.boxShadow = s.getBoundingClientRect().top < 0 ? 'inset 0 -1px 0 var(--border)' : 'none';
+    });
+  }
+
+  // One eyebrow element, relocated rather than duplicated: at <=768px the nav can't
+  // hold a second line, so the node moves into the page header slot and back.
+  _placeEyebrow() {
+    const eyebrow = document.querySelector('[data-eyebrow-nav]');
+    const heroSlot = document.querySelector('[data-eyebrow-slot]');
+    const navHome = document.querySelector('[data-eyebrow-home]');
+    if (!eyebrow || !heroSlot || !navHome) return;
+    const narrow = window.matchMedia('(max-width: 768px)').matches;
+    const target = narrow ? heroSlot : navHome;
+    if (eyebrow.parentElement !== target) target.appendChild(eyebrow);
+    heroSlot.style.display = narrow ? 'block' : 'none';
+  }
+
+  componentWillUnmount() {
+    if (this._obs) this._obs.disconnect();
+    if (this._mq) this._mq.removeEventListener('change', this._onMQ);
+    document.removeEventListener('click', this._blockNav, true);
+  }
+
+  renderVals() {
+    return { theme: this.props.theme ?? 'light' };
+  }
+}
+
+</script>
+</body>
+</html>

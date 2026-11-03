@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unify GenStudio at launch — Nhan Pham</title>
+<meta name="description" content="Nhan Pham — product designer building design systems that outlast the launch. Previously at Adobe and Expedia.">
+<meta property="og:title" content="Unify GenStudio at launch — Nhan Pham">
+<meta property="og:description" content="Nhan Pham — product designer building design systems that outlast the launch. Previously at Adobe and Expedia.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { margin: 0; background: var(--bg); }
+  @media (max-width: 767px) {
+    [data-page-title] { font-size: 48px !important; }
+    [data-page-lede] { font-size: 18px !important; }
+    [data-meta-row] { grid-template-columns: repeat(2, 1fr) !important; }
+  }
+  @media (max-width: 1023px) {
+    [data-stack] { grid-template-columns: 1fr !important; }
+  }
+  /* Content measure: page content centers in a 1280px column at wide viewports while
+     backgrounds stay full-bleed. Gutters remain 48px. */
+  @media (min-width: 1280px) {
+    [data-wrap] {
+      padding-left: calc((100% - 1280px) / 2 + 48px) !important;
+      padding-right: calc((100% - 1280px) / 2 + 48px) !important;
+    }
+    [data-wrap-left] { margin-left: calc((100% - 1280px) / 2); }
+  }
+  [data-carousel-track]::-webkit-scrollbar { display: none; }
+  [data-carousel-track]:focus-visible { outline: 2px solid var(--accent-primary); outline-offset: -2px; }
+  /* Identity eyebrow: neutral while it sits in the nav, accent once it relocates into
+     the page header at <=768px. */
+  [data-eyebrow-slot] [data-eyebrow-nav],
+  [data-eyebrow-slot] [data-eyebrow-nav] span { color: var(--accent-primary) !important; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+</style>
+</helmet>
+
+<div data-theme="{{ theme }}" data-screen-label="Case study — Launch GenStudio" style="min-height:100vh; background:var(--bg); color:var(--fg); font-family:var(--font-sans);">
+
+  <div data-nav-sentinel="" style="height:1px;"></div>
+  <div data-wrap="" style="position:sticky; top:0; z-index:10; display:flex; align-items:center; justify-content:space-between; gap:32px; padding:18px 48px; background:var(--bg); backdrop-filter:saturate(1.8) blur(8px); transition:var(--transition-base);" data-sticky-nav="">
+    <div data-eyebrow-home="" style="display:flex; flex-direction:column; align-items:flex-start; gap:2px;">
+      <a href="index.dc.html" style="font-family: var(--font-display); font-size: 22px; font-weight: 700; letter-spacing: -0.01em; color: var(--fg)">Nhan Pham</a>
+      <div data-eyebrow-nav="" style="font-size: 13px; letter-spacing: 0.02em; color: var(--fg-identity); text-align: left">Product Designer · Design Systems&nbsp;<span style="color: var(--fg-identity);">· San Francisco Bay Area</span></div>
+    </div>
+    <div style="display:flex; align-items:center; gap:28px;">
+      <a href="index.dc.html#work" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">Work</a>
+      <a href="resume.dc.html" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">Resume</a>
+      <a href="https://www.linkedin.com/in/nhan-pham/" target="_blank" rel="noopener" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">LinkedIn</a>
+      <a data-cta="" href="mailto:nhanpham901@gmail.com" style="display:inline-flex; align-items:center; height:var(--control-h-sm); padding:0 var(--space-4); font-size:13px; font-weight:600; border-radius:var(--radius-md); background:var(--accent-primary-solid); color:var(--accent-primary-on-solid);" style-hover="filter:brightness(0.94)">Email Nhan</a>
+    </div>
+  </div>
+
+  <div data-wrap-left="" style="padding:80px 48px var(--space-12); max-width:760px; display:flex; flex-direction:column; gap:var(--space-6);">
+    <div data-eyebrow-slot="" style="display: none;"></div>
+    <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-primary);">Case study · Zero to one</div>
+    <h1 data-page-title="" style="margin:0; font-family:var(--font-display); font-size:56px; font-weight:700; line-height:1.05; letter-spacing:-0.02em; color:var(--fg); text-wrap:balance;">Unify GenStudio at launch</h1>
+    <div data-page-lede="" style="font-size:19px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Established core system standards and component taxonomy for Adobe’s flagship generative AI product and aligned cross-org teams to ship a unified experience in time for General Availability.</div>
+  </div>
+
+  <div data-wrap-left="" style="padding:0 48px var(--space-12);">
+    <div data-meta-row="" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:var(--space-6); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:var(--space-6) 0;">
+      <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Role</div>
+        <div style="font-size:15px; color:var(--fg);">Staff designer, responsible for delivering system standards, components, and governance.<br><br>I was borrowed from Digital Media Org for this launch only</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Partners</div>
+        <div style="font-size:15px; color:var(--fg);">Several teams, cross org (Digital Media x Experience cloud), cross roles. <br><br>Dedicated 6 engineers, for this launch only</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Timeline</div>
+        <div style="font-size:15px; color:var(--fg);">4 months, Jun<span style="letter-spacing: 0.3px;">–Sept</span>&nbsp;2024<br></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Scope</div>
+        <div style="font-size:15px; color:var(--fg);">Foundations, components, governance</div>
+      </div>
+    </div>
+  </div>
+
+  <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-5);">
+    <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Sample visuals</h2>
+    <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); max-width:760px; text-wrap:pretty;">Internal work from my time at Adobe is confidential. The samples shown here are Adobe's public materials of GenStudio which showcases some of my work.</div>
+    <div data-carousel="" role="group" aria-roledescription="carousel" aria-label="GenStudio screens" style="position:relative; border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; background:var(--bg-surface);">
+      <div data-carousel-track="" tabindex="0" style="display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; scrollbar-width:none;">
+        <div data-slide="" style="flex:0 0 100%; scroll-snap-align:center; display:flex; align-items:center; justify-content:center;">
+          <img src="./screenshot-2026-08-19-at-2-00-11-pm-mtxeye9o-s97n.png" alt="GenStudio screen: campaign overview" width="2680" height="1456" style="width:100%; height:auto; display:block;">
+        </div>
+        <div data-slide="" style="flex:0 0 100%; scroll-snap-align:center; display:flex; align-items:center; justify-content:center;">
+          <img src="./screenshot-2026-08-19-at-2-00-39-pm-mtxeye9u-awrc.png" alt="GenStudio screen: asset detail" width="2554" height="1534" style="width:100%; height:auto; display:block;">
+        </div>
+        <div data-slide="" style="flex:0 0 100%; scroll-snap-align:center; display:flex; align-items:center; justify-content:center;">
+          <img src="./screenshot-2026-08-19-at-2-02-55-pm-mtxeyea1-py63.png" alt="GenStudio screen: generation workflow" width="2008" height="1302" style="width:100%; height:auto; display:block;">
+        </div>
+        <div data-slide="" style="flex:0 0 100%; scroll-snap-align:center; display:flex; align-items:center; justify-content:center;">
+          <img src="./screenshot-2026-08-19-at-2-04-07-pm-mtxeyea7-m2pq.png" alt="GenStudio screen: component detail" width="2018" height="1204" style="width:100%; height:auto; display:block;">
+        </div>
+        <div data-slide="" style="flex:0 0 100%; scroll-snap-align:center; display:flex; align-items:center; justify-content:center;">
+          <img src="./screenshot-2026-08-19-at-2-09-44-pm-mtxeyeag-gyie.png" alt="GenStudio screen: insights view" width="2724" height="1542" style="width:100%; height:auto; display:block;">
+        </div>
+      </div>
+
+      <button type="button" data-carousel-prev="" aria-label="Previous screen" onClick="{{ prev }}" style="position:absolute; top:50%; left:16px; transform:translateY(-50%); width:44px; height:44px; border:1px solid var(--border); border-radius:var(--radius-pill); background:var(--bg); color:var(--fg); display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:var(--shadow-md); transition:var(--transition-base);" style-hover="border-color:var(--border-strong)">
+        <span aria-hidden="true" style="font-size:18px; line-height:1;">←</span>
+      </button>
+      <button type="button" data-carousel-next="" aria-label="Next screen" onClick="{{ next }}" style="position:absolute; top:50%; right:16px; transform:translateY(-50%); width:44px; height:44px; border:1px solid var(--border); border-radius:var(--radius-pill); background:var(--bg); color:var(--fg); display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:var(--shadow-md); transition:var(--transition-base);" style-hover="border-color:var(--border-strong)">
+        <span aria-hidden="true" style="font-size:18px; line-height:1;">→</span>
+      </button>
+    </div>
+
+    <div data-carousel-dots="" style="display:flex; align-items:center; justify-content:center; gap:10px;">
+      <button type="button" aria-label="Go to screen 1" onClick="{{ goTo0 }}" style="width:8px; height:8px; padding:0; border:none; border-radius:var(--radius-pill); background:var(--neutral-300); cursor:pointer; transition:var(--transition-base);"></button>
+      <button type="button" aria-label="Go to screen 2" onClick="{{ goTo1 }}" style="width:8px; height:8px; padding:0; border:none; border-radius:var(--radius-pill); background:var(--neutral-300); cursor:pointer; transition:var(--transition-base);"></button>
+      <button type="button" aria-label="Go to screen 3" onClick="{{ goTo2 }}" style="width:8px; height:8px; padding:0; border:none; border-radius:var(--radius-pill); background:var(--neutral-300); cursor:pointer; transition:var(--transition-base);"></button>
+      <button type="button" aria-label="Go to screen 4" onClick="{{ goTo3 }}" style="width:8px; height:8px; padding:0; border:none; border-radius:var(--radius-pill); background:var(--neutral-300); cursor:pointer; transition:var(--transition-base);"></button>
+      <button type="button" aria-label="Go to screen 5" onClick="{{ goTo4 }}" style="width:8px; height:8px; padding:0; border:none; border-radius:var(--radius-pill); background:var(--neutral-300); cursor:pointer; transition:var(--transition-base);"></button>
+    </div>
+  </div>
+
+  <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-16); max-width:760px;">
+    <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+      <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">The problem</h2>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">GenStudio sat at the intersection of two major Adobe orgs with differing technical foundations, Digital Media and Experience Cloud. Early conceptual iterations prioritized rapid executive buy-in over existing platform architecture, committing to Spectrum 2 before most of the core tokens and web components were production-ready. To hit aggressive weekly milestones, feature teams built bespoke UI, in most cases Spectrum 1 was Express skinned under the guise of Spectrum 2, accumulating massive technical and design debt.<br><br>In June 2024, four months before the General Availability Release, I was brought in as the dedicated systems lead to stabilize GenStudio’s foundation and de-risk the launch.</div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+      <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Approach</h2>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">My goal was to clear up the ambiguity without stalling ongoing feature delivery.</div>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">The initial work wasn’t visual design. It was figuring out what was true. Before drawing a single component, I audited the gap between executive expectations and technical feasibility, determining which decisions were locked, what our platforms could actually support, and what adopting Spectrum 2 looked like in practice.</div>
+      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">My work breaks down into five phases:</div>
+      <ol style="margin:0; padding-left:24px; display:flex; flex-direction:column; gap:var(--space-3); font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">
+        <li><strong style="font-weight: 600; color: var(--fg);">System &amp; Workflow Audit:</strong> Investigated how cross-org design and engineering teams were operating day-to-day. Uncovered un-tokenized code, duplicate patterns, and technical debt, then presented a short gap analysis to leadership to reset launch expectations around Spectrum 2.</li>
+        <li><strong style="font-weight:600; color:var(--fg);">Component Triage (Keep, Redefine, Discard):</strong> Evaluated in-flight UI candidates against objective criteria: intent to reuse, platform overlap, implementation timelines, and necessity. If a pattern was critical but missing upstream, GenStudio built a temporary bridge component with a clear deprecation plan once platform versions landed.</li>
+        <li><strong style="font-weight: 600; color: var(--fg);">Roadmap &amp; Dependency Alignment:</strong> In parallel, actively balanced our deliverables against the evolving roadmaps of Quarry and the core Spectrum 2 platform. This meant negotiating component ownership to ensure my 6 engineers only built what wasn’t already being solved upstream.</li>
+        <li><strong style="font-weight:600; color:var(--fg);">Production Engineering with Core Standards:</strong> Designed and built the surviving components directly alongside our dedicated engineering team, holding every asset to our standards for craft, accessibility, and ease of use for engineers.</li>
+        <li><strong style="font-weight: 600; color: var(--fg);">Decoupled Governance &amp; Handoff:</strong> Wrote the standards defining core standards, criteria for when local deviation was justified, and clear engagement models across Digital Media and Experience Cloud teams so that GenStudio’s design systems could scale coherently without depending on me.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-6); max-width:760px;">
+    <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Defining the components and behavior expectations</h2>
+    <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Before aligning with Spectrum design, Quarry/React Spectrum engineering, and Brand team for GenStudio requirements, I needed to understand how the GenStudio team was building. I set out to find common components in GenStudio to start a stable foundation. I audited dozens of in-flight design files that had key repeating one-off instances and found engineering implementation doing the same and skinned Spectrum 1 as Express while labeling it Spectrum 2.</div>
+    <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I did not set out to meet a specific number of components, they emerged naturally in this process. Key components identified were:</div>
+    <ul style="margin:0; padding-left:22px; display:flex; flex-direction:column; gap:var(--space-3); font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">
+      <li><strong style="font-weight:600; color:var(--fg);">The application shell and layout:</strong> global top and left navigation, modal dialogs, modal headers</li>
+      <li><strong style="font-weight:600; color:var(--fg);">The asset discovery and presentation:</strong> cards, card gallery (masonry or standard grid), empty states</li>
+      <li><strong style="font-weight:600; color:var(--fg);">The direct manipulation &amp; canvas:</strong> In-line editing patterns for marketing collateral on canvas and artifact metadata</li>
+    </ul>
+    
+    <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Beyond static UI specs, I defined how components behave and how type scales, so they stayed accessible and predictable:</div>
+    <ul style="margin:0; padding-left:22px; display:flex; flex-direction:column; gap:var(--space-3); font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">
+      <li><strong style="font-weight:600; color:var(--fg);">Interaction &amp; Feedback Models:</strong> Standardized selection states, multi-action card behaviors (hover/focus/bulk select), and contextual error handling.</li>
+      <li><strong style="font-weight: 600; color: var(--fg);">Enterprise Density &amp; Typography:</strong> Defined type scale relationships tailored for a dense, productivity-focused enterprise authoring.</li>
+    </ul>
+    <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I closed the loop by feeding these edge cases directly back to the core Spectrum team or the Quarry team. Each issue was either fixed upstream or added to their backlog.</div>
+  </div>
+
+  <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-6); max-width:760px;">
+    <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">See my work in the live product</h2>
+    <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Adobe GenStudio is publicly explorable. You can see a sample through the promotional video available on Adobe.com.</div>
+    <div>
+      <a data-cta="" href="https://business.adobe.com/resources/genstudio-for-performance-marketing-free-trial.html#_model" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:var(--space-2); height:var(--control-h-lg); padding:0 var(--space-6); font-size:16px; font-weight:600; border-radius:var(--radius-md); background:var(--accent-primary-solid); color:var(--accent-primary-on-solid); text-decoration:none;" style-hover="filter:brightness(0.94); text-decoration:none">View the promotion video on Adobe.com<span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-6); max-width:760px;">
+    <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Outcome</h2><div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary); font-variant-numeric:tabular-nums;">A cohesive, modern, and trustworthy GenStudio</div>
+        <div style="font-size:15px; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-size: 17px; letter-spacing: 0.34px;">Unifying disparate Digital Media and Experience Cloud feature sets under a single design language reduced cognitive load, delivering a simplified, on-brand experience for marketers navigating end-to-end workflows.</span></div>
+      </div>
+    <div style="background: transparent; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-2); font-size: 17px">
+        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary); font-variant-numeric:tabular-nums;">A cultural shift in zero-to-one product development</div>
+        <div style="font-size:15px; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-size: 17px; letter-spacing: 0.34px;">GenStudio served as a high-stakes case study in the risks of siloed zero-to-one development. Initially driven by aggressive, ad-hoc execution, it quickly revealed why deep platform knowledge is non-negotiable when building net-new products on top of existing ecosystems. By stepping back to audit and integrate existing platform architecture, we proved that speed does not have to come at the expense of systemic craft or quality. This established a new operational benchmark for how Adobe builds zero-to-one products across organizational boundaries.</span></div>
+      </div><div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
+        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary); font-variant-numeric:tabular-nums;">Executive and stage validation at Adobe MAX</div>
+        <div style="font-size:15px; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-size: 17px; letter-spacing: 0.34px;">Digital Media and Experience Cloud leadership recognized GenStudio as their benchmark standard for design execution, stable enough to be demoed live straight from production without bespoke marketing fallbacks.</span><br><span style="font-size: 17px; letter-spacing: 0.34px;"></span></div>
+      </div><div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"></div>
+  </div>
+
+<a data-wrap="" href="composability.dc.html" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-8); background:var(--bg-surface); padding:var(--space-12) 48px; text-decoration:none; transition:var(--transition-base);" style-hover="text-decoration:none; background:var(--accent-primary-surface)">
+    <div style="display:flex; flex-direction:column; gap:var(--space-2);">
+      <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Next project</div>
+      <div style="font-family:var(--font-display); font-size:32px; font-weight:700; letter-spacing:-0.02em; color:var(--fg);">Scale cross-product composability at Adobe</div>
+    </div>
+    <div data-cta="" style="font-size:15px; font-weight:600; color:var(--accent-primary); white-space:nowrap;">Read the case study →</div>
+  </a>
+
+  <div data-wrap="" style="padding:28px 48px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+    <div style="font-size:13px; color:var(--fg-tertiary);">© 2026 Nhan Pham</div>
+    <div style="display:flex; gap:var(--space-5);">
+      <a href="mailto:nhanpham901@gmail.com" style="font-size:13px; color:var(--fg-secondary);">Email</a>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;lockLinks&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Editing&quot; },
+  &quot;theme&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;light&quot;, &quot;dark&quot;], &quot;default&quot;: &quot;light&quot;, &quot;tsType&quot;: &quot;'light' | 'dark'&quot; }
+}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._blockNav = e => {
+      if (!this.props.lockLinks) return;
+      const a = e.target.closest && e.target.closest('a[href]');
+      if (a) { e.preventDefault(); e.stopPropagation(); }
+    };
+    document.addEventListener('click', this._blockNav, true);
+
+    this._obs = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        const nav = e.target.nextElementSibling;
+        const stuck = !e.isIntersecting && e.boundingClientRect.top < 0;
+        if (nav) nav.style.boxShadow = stuck ? 'inset 0 -1px 0 var(--border)' : 'none';
+      }),
+      { threshold: 0 }
+    );
+    this._mq = window.matchMedia('(max-width: 768px)');
+    this._onMQ = () => this._placeEyebrow();
+    this._mq.addEventListener('change', this._onMQ);
+    this._placeEyebrow();
+    this._carouselInit();
+
+    document.querySelectorAll('[data-nav-sentinel]').forEach(s => {
+      this._obs.observe(s);
+      const nav = s.nextElementSibling;
+      if (nav) nav.style.boxShadow = s.getBoundingClientRect().top < 0 ? 'inset 0 -1px 0 var(--border)' : 'none';
+    });
+  }
+
+  // Carousel: the track is a native scroll-snap container, so drag, trackpad swipe and
+  // arrow keys work for free; these handlers just drive it from the buttons and keep
+  // the dots in sync with whatever the user scrolled to.
+  _carouselInit() {
+    const track = document.querySelector('[data-carousel-track]');
+    if (!track) return;
+    this._track = track;
+    this._syncDots = () => {
+      const i = Math.round(track.scrollLeft / track.clientWidth);
+      document.querySelectorAll('[data-carousel-dots] button').forEach((d, n) => {
+        d.style.background = n === i ? 'var(--accent-primary-solid)' : 'var(--neutral-300)';
+        d.style.transform = n === i ? 'scale(1.35)' : 'none';
+        d.setAttribute('aria-current', n === i ? 'true' : 'false');
+      });
+      const last = track.children.length - 1;
+      const prev = document.querySelector('[data-carousel-prev]');
+      const nxt = document.querySelector('[data-carousel-next]');
+      if (prev) { prev.style.opacity = i === 0 ? '0.35' : '1'; prev.disabled = i === 0; }
+      if (nxt) { nxt.style.opacity = i === last ? '0.35' : '1'; nxt.disabled = i === last; }
+    };
+    this._onScroll = () => {
+      clearTimeout(this._scrollTimer);
+      this._scrollTimer = setTimeout(this._syncDots, 90);
+    };
+    track.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onKey = e => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); this._slideBy(1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); this._slideBy(-1); }
+    };
+    track.addEventListener('keydown', this._onKey);
+    this._syncDots();
+  }
+
+  _slideBy(dir) {
+    const t = this._track;
+    if (!t) return;
+    t.scrollTo({ left: t.scrollLeft + dir * t.clientWidth, behavior: 'smooth' });
+  }
+
+  _slideTo(i) {
+    const t = this._track;
+    if (!t) return;
+    t.scrollTo({ left: i * t.clientWidth, behavior: 'smooth' });
+  }
+
+  // One eyebrow element, relocated rather than duplicated: at <=768px the nav can't
+  // hold a second line, so the node moves into the page header slot and back.
+  _placeEyebrow() {
+    const eyebrow = document.querySelector('[data-eyebrow-nav]');
+    const heroSlot = document.querySelector('[data-eyebrow-slot]');
+    const navHome = document.querySelector('[data-eyebrow-home]');
+    if (!eyebrow || !heroSlot || !navHome) return;
+    const narrow = window.matchMedia('(max-width: 768px)').matches;
+    const target = narrow ? heroSlot : navHome;
+    if (eyebrow.parentElement !== target) target.appendChild(eyebrow);
+    heroSlot.style.display = narrow ? 'block' : 'none';
+  }
+
+  componentWillUnmount() {
+    if (this._obs) this._obs.disconnect();
+    if (this._mq) this._mq.removeEventListener('change', this._onMQ);
+    if (this._track) {
+      this._track.removeEventListener('scroll', this._onScroll);
+      this._track.removeEventListener('keydown', this._onKey);
+    }
+    clearTimeout(this._scrollTimer);
+    document.removeEventListener('click', this._blockNav, true);
+  }
+
+  renderVals() {
+    return {
+      theme: this.props.theme ?? 'light',
+      prev: () => this._slideBy(-1),
+      next: () => this._slideBy(1),
+      goTo0: () => this._slideTo(0),
+      goTo1: () => this._slideTo(1),
+      goTo2: () => this._slideTo(2),
+      goTo3: () => this._slideTo(3),
+      goTo4: () => this._slideTo(4),
+    };
+  }
+}
+
+</script>
+</body>
+</html>
