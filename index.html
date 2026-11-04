@@ -28,7 +28,7 @@
       margin: calc(-1 * var(--space-8)) calc(-1 * var(--space-8)) 0 !important;
       border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0 !important;
     }
-    [data-card-title] { font-size: 22px !important; letter-spacing: -0.01em !important; }
+    [data-card-title] { font-size: 24px !important; letter-spacing: -0.01em !important; }
     [data-card-body] { font-size: 18px !important; }
     [data-portfolio-cover] img { object-position: 50% 85% !important; }
     [data-about-grid] { gap: var(--space-8) !important; }
@@ -96,6 +96,11 @@
 
   @media (max-width: 768px) {
     [data-page-lede] { font-size: 18px !important; }
+  }
+
+  @media (max-width: 576px) {
+    [data-quote-mark] { display: none !important; }
+    [data-testimonial] { grid-template-columns: 1fr !important; }
   }
 </style>
 </helmet>
@@ -198,22 +203,22 @@
   <div data-wrap-left="" style="padding:0 48px var(--space-24); display:flex; flex-direction:column; gap:var(--space-12); max-width:820px;">
     <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">What my partners say</h2>
 
-    <div style="display:grid; grid-template-columns:auto 1fr; column-gap:var(--space-6); row-gap:var(--space-3); align-items:start;">
-      <div aria-hidden="true" style="font-family: var(--font-display); font-size: 72px; font-weight: 700; line-height: 0.8; color: var(--fg-quote-mark); user-select: none">“</div>
+    <div data-testimonial="" style="display:grid; grid-template-columns:auto 1fr; column-gap:var(--space-6); row-gap:var(--space-3); align-items:start;">
+      <div data-quote-mark="" aria-hidden="true" style="font-family: var(--font-display); font-size: 72px; font-weight: 700; line-height: 0.8; color: var(--fg-quote-mark); user-select: none">“</div>
       <div style="font-family: var(--font-display); font-size: 20px; font-weight: 600; line-height: 1.6; letter-spacing: -0.005em; color: var(--fg-quote); text-wrap: pretty">You came in and created a system that we (many different teams) could all benefit from instantly.&nbsp;</div>
       <div></div>
       <div style="font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-tertiary); font-family: Work Sans; line-height: 1.5em">— AKSHAY POTNIS, GENSTUDIO DESIGN DIRECTOR, ADOBE</div>
     </div>
 
-    <div style="display:grid; grid-template-columns:auto 1fr; column-gap:var(--space-6); row-gap:var(--space-3); align-items:start;">
-      <div aria-hidden="true" style="font-family: var(--font-display); font-size: 72px; font-weight: 700; line-height: 0.8; color: var(--fg-quote-mark); user-select: none">“</div>
+    <div data-testimonial="" style="display:grid; grid-template-columns:auto 1fr; column-gap:var(--space-6); row-gap:var(--space-3); align-items:start;">
+      <div data-quote-mark="" aria-hidden="true" style="font-family: var(--font-display); font-size: 72px; font-weight: 700; line-height: 0.8; color: var(--fg-quote-mark); user-select: none">“</div>
       <div style="font-family: var(--font-display); font-size: 20px; font-weight: 600; line-height: 1.6; letter-spacing: -0.005em; color: var(--fg-quote); text-wrap: pretty">She is a kind and gracious partner and it’s hard to imagine what we would have done without her and her ability to think through complex systems!</div>
       <div></div>
       <div style="font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-tertiary); font-family: Work Sans; line-height: 1.5em">— ALAN WILSON, PRINCIPAL DESIGNER, ADOBE</div>
     </div>
 
-    <div style="display:grid; grid-template-columns:auto 1fr; column-gap:var(--space-6); row-gap:var(--space-3); align-items:start;">
-      <div aria-hidden="true" style="font-family: var(--font-display); font-size: 72px; font-weight: 700; line-height: 0.8; color: var(--fg-quote-mark); user-select: none">“</div>
+    <div data-testimonial="" style="display:grid; grid-template-columns:auto 1fr; column-gap:var(--space-6); row-gap:var(--space-3); align-items:start;">
+      <div data-quote-mark="" aria-hidden="true" style="font-family: var(--font-display); font-size: 72px; font-weight: 700; line-height: 0.8; color: var(--fg-quote-mark); user-select: none">“</div>
       <div style="font-family: var(--font-display); font-size: 20px; font-weight: 600; line-height: 1.6; letter-spacing: -0.005em; color: var(--fg-quote); text-wrap: pretty">This year also started to see the payoffs of creating champions of your work, and seeing designers advocate and champion unified experiences even without your hands-on help. You've built that foundation, and now that momentum is starting to pick up.</div>
       <div></div>
       <div style="font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-tertiary); font-family: Work Sans; line-height: 1.5em">— COURTNEY GEORGE, SENIOR DESIGN DIRECTOR (MANAGER), ADOBE</div>
@@ -225,9 +230,9 @@
       <img src="assets/nhan-portrait.jpg" alt="Portrait of Nhan Pham" style="width:100%; max-width:252px; aspect-ratio:4 / 5; object-fit:cover; object-position:50% 35%; display:block; background:var(--neutral-100); border-radius:var(--radius-lg);">
       <div style="display:flex; flex-direction:column; gap:var(--space-4);">
         <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">About</h2>
-        <div style="font-size:16px; line-height:1.65; color:var(--fg-secondary); text-wrap:pretty;">I am a designer looking for the next evolution of my work and growth opportunity. I am looking for and thrive in roles that require design systems thinking and cross-org collaboration.</div>
-        <div style="font-size:16px; line-height:1.65; color:var(--fg-secondary); text-wrap:pretty;">I've been a full-time mom for 8+ months now. With this pause on my career, I get to watch AI change the field in real time. I've taken the time to observe, learn, leverage AI tools, and form opinions while building critical soft skills through motherhood and being a full-time care taker.&nbsp;<br></div>
-        <div style="font-size:16px; line-height:1.65; color:var(--fg-secondary); text-wrap:pretty;">My personal refreshments: being active, flower arrangements, alter or create recipes for baked goods, cafes, meet with people, movies, and sleep.</div>
+        <div style="font-size:18px; line-height:1.65; color:var(--fg-secondary); text-wrap:pretty;">I am a designer looking for the next evolution of my work and growth opportunity. I am looking for and thrive in roles that require design systems thinking and cross-org collaboration.</div>
+        <div style="font-size:18px; line-height:1.65; color:var(--fg-secondary); text-wrap:pretty;">I've been a full-time mom for 8+ months now. With this pause on my career, I get to watch AI change the field in real time. I've taken the time to observe, learn, leverage AI tools, and form opinions while building critical soft skills through motherhood and being a full-time care taker.&nbsp;<br></div>
+        <div style="font-size:18px; line-height:1.65; color:var(--fg-secondary); text-wrap:pretty;">My personal refreshments: being active, flower arrangements, alter or create recipes for baked goods, cafes, meet with people, movies, and sleep.</div>
         
       </div>
     </div>
@@ -236,7 +241,7 @@
   <div data-wrap="" style="padding:80px 48px; display:flex; align-items:center; justify-content:space-between; gap:var(--space-8);">
     <div style="display:flex; flex-direction:column; gap:var(--space-3);">
       <h2 style="margin:0; font-family:var(--font-display); font-size:36px; font-weight:700; line-height:1.15; letter-spacing:-0.02em; color:var(--fg);">Worth a chat?</h2>
-      <div style="font-size:16px; line-height:1.6; color:var(--fg-secondary); max-width:48ch; text-wrap:pretty;">Reach out directly at <a href="mailto:nhanpham901@gmail.com">nhanpham901@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/nhan-pham/" target="_blank" rel="noopener">LinkedIn</a>. I'm always open to conversations about systems, architecture, principles, and what's next.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); max-width:48ch; text-wrap:pretty;">Reach out directly at <a href="mailto:nhanpham901@gmail.com">nhanpham901@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/nhan-pham/" target="_blank" rel="noopener">LinkedIn</a>. I'm always open to conversations about systems, architecture, principles, and what's next.</div>
     </div>
   </div>
 
