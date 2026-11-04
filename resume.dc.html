@@ -17,6 +17,10 @@
 <link rel="stylesheet" href="styles.css">
 <style>
   body { margin: 0; background: var(--bg); }
+  /* Identity eyebrow is hidden at <=768px on every page. */
+  @media (max-width: 768px) {
+    [data-eyebrow-nav], [data-eyebrow-slot] { display: none !important; }
+  }
   @media (max-width: 1023px) {
     [data-stack] { grid-template-columns: 1fr !important; }
   }
@@ -58,7 +62,7 @@
       <a href="index.dc.html#work" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">Work</a>
       <a href="resume.dc.html" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">Resume</a>
       <a href="https://www.linkedin.com/in/nhan-pham/" target="_blank" rel="noopener" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">LinkedIn</a>
-      <a data-cta="" href="mailto:nhanpham901@gmail.com" style="display:inline-flex; align-items:center; height:var(--control-h-sm); padding:0 var(--space-4); font-size:13px; font-weight:600; border-radius:var(--radius-md); background:var(--accent-primary-solid); color:var(--accent-primary-on-solid);" style-hover="filter:brightness(0.94)">Email Nhan</a>
+      <a data-cta="" href="mailto:nhanpham901@gmail.com" style="display:inline-flex; align-items:center; height:var(--control-h-sm); padding:0 var(--space-4); font-size:13px; font-weight:600; border-radius:var(--radius-md); background:var(--accent-primary-solid); color:var(--accent-primary-on-solid);" style-hover="filter:brightness(0.94)">Email</a>
     </div>
   </div>
 

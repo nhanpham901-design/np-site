@@ -18,6 +18,10 @@
 <script src="./image-slot.js"></script>
 <style>
   body { margin: 0; background: var(--bg); }
+  /* Identity eyebrow is hidden at <=768px on every page. */
+  @media (max-width: 768px) {
+    [data-eyebrow-nav], [data-eyebrow-slot] { display: none !important; }
+  }
   @media (max-width: 1023px) {
     [data-stack] { grid-template-columns: 1fr !important; }
     [data-featured-cover] {
@@ -38,6 +42,12 @@
   @media (max-width: 767px) {
     [data-page-title] { font-size: 48px !important; }
     [data-page-lede] { font-size: 16px !important; }
+  }
+  @media (max-width: 768px) {
+    [data-hero] { padding-top: 56px !important; }
+  }
+  @media (min-width: 769px) {
+    [data-hero] { padding-top: 72px !important; }
   }
   @media (min-width: 1024px) {
     [data-featured-card] { align-items: stretch !important; }
@@ -81,11 +91,11 @@
       <a href="#work" style="font-size: 14px; font-weight: 500; color: var(--fg-secondary); display: none">Work</a>
       <a href="resume.dc.html" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">Resume</a>
       <a href="https://www.linkedin.com/in/nhan-pham/" target="_blank" rel="noopener" style="font-size:14px; font-weight:500; color:var(--fg-secondary);">LinkedIn</a>
-      <a data-cta="" href="mailto:nhanpham901@gmail.com" style="display:inline-flex; align-items:center; height:var(--control-h-sm); padding:0 var(--space-4); font-size:13px; font-weight:600; border-radius:var(--radius-md); background:var(--accent-primary-solid); color:var(--accent-primary-on-solid);" style-hover="filter:brightness(0.94)">Email Nhan</a>
+      <a data-cta="" href="mailto:nhanpham901@gmail.com" style="display:inline-flex; align-items:center; height:var(--control-h-sm); padding:0 var(--space-4); font-size:13px; font-weight:600; border-radius:var(--radius-md); background:var(--accent-primary-solid); color:var(--accent-primary-on-solid);" style-hover="filter:brightness(0.94)">Email</a>
     </div>
   </div>
 
-  <div data-wrap-left="" style="padding:96px 48px 80px; display:flex; flex-direction:column; gap:var(--space-8); max-width:900px;">
+  <div data-wrap-left="" data-hero="" style="padding:96px 48px 80px; display:flex; flex-direction:column; gap:var(--space-8); max-width:900px;">
     <div data-eyebrow-slot="" style="display: none;"></div>
     <h1 data-page-title="" style="margin:0; font-family:var(--font-display); font-size:64px; font-weight:700; line-height:1.13; letter-spacing:-0.01em; color:var(--fg); text-wrap:balance;">Call me 'Nan'.&nbsp;<br>I build systems that outlast the launch.</h1>
     <div data-page-lede="" style="font-size:18px; line-height:1.6; color:var(--fg-secondary); max-width:60ch; text-wrap:pretty;">Over the past 10 years, I've worked across product design and platform architecture to create scalable systems that help teams ship faster while protecting the customer experience.<br><br>Previously at Adobe and Expedia.<br></div>
