@@ -24,7 +24,6 @@
   @media (max-width: 767px) {
     [data-page-title] { font-size: 48px !important; }
     [data-page-lede] { font-size: 18px !important; }
-    [data-meta-row] { grid-template-columns: repeat(2, 1fr) !important; }
   }
   @media (max-width: 1023px) {
     [data-stack] { grid-template-columns: 1fr !important; }
@@ -61,6 +60,23 @@
   @media (max-width: 576px) {
     [data-page-title] { font-size: 40px !important; }
   }
+
+
+  @media (max-width: 768px) {
+    [data-outcome-title] { font-size: 36px !important; }
+  }
+
+  @media (max-width: 767px) {
+    [data-next-project] { flex-direction: column !important; align-items: flex-start !important; gap: var(--space-4) !important; }
+  }
+
+  @media (max-width: 768px) {
+    [data-next-project] [data-next-title] { font-size: 28px !important; }
+  }
+
+  @media (max-width: 768px) {
+    [data-meta-row] { grid-template-columns: 1fr !important; }
+  }
 </style>
 </helmet>
 
@@ -91,19 +107,19 @@
     <div data-meta-row="" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:var(--space-6); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:var(--space-6) 0;">
       <div style="display:flex; flex-direction:column; gap:var(--space-2);">
         <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Role</div>
-        <div style="font-size:15px; color:var(--fg);">Staff Systems Designer, Page Architecture &amp; Composability</div>
+        <div style="font-size:18px; color:var(--fg);">Staff Systems Designer, Page Architecture &amp; Composability</div>
       </div>
       <div style="display:flex; flex-direction:column; gap:var(--space-2);">
         <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Partners</div>
-        <div style="font-size:15px; color:var(--fg);">Engineering Architects, Platform Engineering, Senior Designers (Admin, Commerce, Identity)</div>
+        <div style="font-size:18px; color:var(--fg);">Engineering Architects, Platform Engineering, Senior Designers (Admin, Commerce, Identity)</div>
       </div>
       <div style="display:flex; flex-direction:column; gap:var(--space-2);">
         <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Timeline</div>
-        <div style="font-size:15px; color:var(--fg);">Under 2 years,&nbsp;<span style="letter-spacing: 0.3px;">2023–2025</span></div>
+        <div style="font-size:18px; color:var(--fg);">Under 2 years,&nbsp;<span style="letter-spacing: 0.3px;">2023–2025</span></div>
       </div>
       <div style="display:flex; flex-direction:column; gap:var(--space-2);">
         <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Scope</div>
-        <div style="font-size:15px; color:var(--fg);">Architecture, layout, framework, operating model</div>
+        <div style="font-size:18px; color:var(--fg);">Architecture, layout, framework, operating model</div>
       </div>
     </div>
   </div>
@@ -111,17 +127,17 @@
   <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-16); max-width:760px;">
     <div style="display:flex; flex-direction:column; gap:var(--space-4);">
       <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Overview</h2>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">In 2023, cross-surface user experiences at Adobe faced severe fragmentation: teams built bespoke, single-product experiences that made cross-app workflows expensive to build and brittle to maintain. The desired outcome is unification, composability, and scale across Adobe experiences. In the first leap, I led the design architecture of a unified Page Framework across two levels of abstraction: decoupling UI patterns from business capabilities, and capabilities from host applications. This model was proven by scaling Business Essentials (a shipped Fall 2023 Administration workflow containing key capabilities) across Adobe Express and Acrobat with zero breaking framework changes thru 2025, over a year later.<br><br>With this validation, scaling composability at quality across Adobe became an executive-level priority. The next goal of this charter became "how do we scale this to the three Platform experiences: Identity, Administration, and Commerce?".</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">In 2023, cross-surface user experiences at Adobe faced severe fragmentation: teams built bespoke, single-product experiences that made cross-app workflows expensive to build and brittle to maintain. The desired outcome is unification, composability, and scale across Adobe experiences. In the first leap, I led the design architecture of a unified Page Framework across two levels of abstraction: decoupling UI patterns from business capabilities, and capabilities from host applications. This model was proven by scaling Business Essentials (a shipped Fall 2023 Administration workflow containing key capabilities) across Adobe Express and Acrobat with zero breaking framework changes thru 2025, over a year later.<br><br>With this validation, scaling composability at quality across Adobe became an executive-level priority. The next goal of this charter became "how do we scale this to the three Platform experiences: Identity, Administration, and Commerce?".</div>
     </div>
 
     <div style="display:flex; flex-direction:column; gap:var(--space-5);">
       <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">The challenge: 3 divergent platform realities</h2>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">To unlock reliable, quality, and durable cross-product composability as a platform org, the people in these teams needed to approach this work uniformly. I led the unification of three conflicting engineering and design cultures.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">To unlock reliable, quality, and durable cross-product composability as a platform org, the people in these teams needed to approach this work uniformly. I led the unification of three conflicting engineering and design cultures.</div>
       <div style="display:flex; flex-direction:column; gap:var(--space-4);">
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight: 600; color: var(--fg);">Administration:</span> Building new, scalable workflows with partial component reuse.</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight: 600; color: var(--fg);">Identity:</span> Strictly locked down by security protocols and authorization compliance, with zero tolerance for visual drift.</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Commerce:</span> Rapidly experimenting with custom, high-conversion layouts that resisted shared constraints.</div>
-      </div><div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Bridging these silos meant establishing shared operational principles, defining acceptable parameters for layout deviation, and co-creating expectations for the product designer's role in composable systems.</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight: 600; color: var(--fg);">Administration:</span> Building new, scalable workflows with partial component reuse.</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight: 600; color: var(--fg);">Identity:</span> Strictly locked down by security protocols and authorization compliance, with zero tolerance for visual drift.</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Commerce:</span> Rapidly experimenting with custom, high-conversion layouts that resisted shared constraints.</div>
+      </div><div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Bridging these silos meant establishing shared operational principles, defining acceptable parameters for layout deviation, and co-creating expectations for the product designer's role in composable systems.</div>
     </div>
   </div>
 
@@ -130,16 +146,16 @@
     <div style="display:grid; grid-template-columns:1fr; gap:var(--space-8); align-items:start;">
       <div style="display:flex; flex-direction:column; gap:var(--space-8); max-width:760px;">
       <div style="display:flex; flex-direction:column; gap:var(--space-4);">
-        <h3 style="margin:0; font-size:17px; font-weight:600; color:var(--fg); letter-spacing:-0.005em;">1. The "How We Work" Model (Organizational Alignment)</h3>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Shared Principles:</span> Co-created elevated operational standards across Admin, Commerce, and Identity to replace isolated product roadmaps. (Cross-functional, cross-team)</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">The Designer’s Role in Composability:</span> Co-defined clear expectations and workflows for product designers, shifting their focus from designing static, single-use pages to authoring modular, reusable capabilities following quality standards. (Cross-team)</div>
+        <h3 style="margin:0; font-size:18px; font-weight:600; color:var(--fg); letter-spacing:-0.005em;">1. The "How We Work" Model (Organizational Alignment)</h3>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Shared Principles:</span> Co-created elevated operational standards across Admin, Commerce, and Identity to replace isolated product roadmaps. (Cross-functional, cross-team)</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">The Designer’s Role in Composability:</span> Co-defined clear expectations and workflows for product designers, shifting their focus from designing static, single-use pages to authoring modular, reusable capabilities following quality standards. (Cross-team)</div>
       </div>
       <div style="display:flex; flex-direction:column; gap:var(--space-4);">
-        <h3 style="margin:0; font-size:17px; font-weight:600; color:var(--fg); letter-spacing:-0.005em;">2. The Technical Architecture (The Composability Engine)</h3>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Container-Agnostic Architecture:</span> Decoupled structural rules across Foundation, Orchestration, Capability, and Surface tiers.</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Unified Layout:</span> Delivered full-page and centered dialog layouts in the initial release via PageTemplate, with built-in extensibility for future embedded and inline UI.</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Rules of Composition:</span> Established guardrails defining which capabilities could combine, how modules fit together, and where layout flexibility was allowed.</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Cross-Product Portability:</span> Capabilities were built once to work across multiple hosts.</div>
+        <h3 style="margin:0; font-size:18px; font-weight:600; color:var(--fg); letter-spacing:-0.005em;">2. The Technical Architecture (The Composability Engine)</h3>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Container-Agnostic Architecture:</span> Decoupled structural rules across Foundation, Orchestration, Capability, and Surface tiers.</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Unified Layout:</span> Delivered full-page and centered dialog layouts in the initial release via PageTemplate, with built-in extensibility for future embedded and inline UI.</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Rules of Composition:</span> Established guardrails defining which capabilities could combine, how modules fit together, and where layout flexibility was allowed.</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Cross-Product Portability:</span> Capabilities were built once to work across multiple hosts.</div>
       </div>
       </div>
       <img data-wide-figure="" src="assets/pagetemplate-figure.jpeg" alt="Isometric illustration of the page framework as four stacked tiers: Surface (cross-product assembly) with puzzle pieces on top, Capabilities (nestable modules), Orchestration Engine (page orchestration and page layout), and Foundation (modular architecture and page framework) at the base." style="width:100%; border-radius:var(--radius-lg); display:block;">
@@ -149,30 +165,30 @@
   <div data-wrap-left="" style="padding: 0 48px var(--space-16); display: none; flex-direction: column; gap: var(--space-5); max-width: 760px">
     <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Impact and durability</h2>
     <div style="display:flex; flex-direction:column; gap:var(--space-4);">
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Zero-Rewrite Multi-App Parity:</span> Maintained total architectural stability across major host deployments into Adobe Express and Acrobat.</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Cultural Shift at Scale:</span> Moved cross-functional platform teams from building in isolated product silos to authoring shared, nestable capabilities.</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Extensible Foundation:</span> Established the design taxonomy and system guardrails required to scale beyond pages into side panels, drawers, and inline surfaces without breaking core logic.</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Zero-Rewrite Multi-App Parity:</span> Maintained total architectural stability across major host deployments into Adobe Express and Acrobat.</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Cultural Shift at Scale:</span> Moved cross-functional platform teams from building in isolated product silos to authoring shared, nestable capabilities.</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Extensible Foundation:</span> Established the design taxonomy and system guardrails required to scale beyond pages into side panels, drawers, and inline surfaces without breaking core logic.</div>
     </div>
   </div>
 
   <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-6); max-width:760px;">
-    <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Outcome</h2><div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
-        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary); font-variant-numeric:tabular-nums;">Zero-rewrite multi-app parity</div>
-        <div style="font-size:15px; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-size: 17px; letter-spacing: 0.34px;">Maintained total architectural stability across major host deployments into Adobe Express and Acrobat.</span></div>
+    <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Outcome</h2><div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-4);">
+        <div data-outcome-title="" style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1.2; letter-spacing:-0.02em; color:var(--accent-primary); font-variant-numeric:tabular-nums;">Zero-rewrite multi-app parity</div>
+        <div style="font-size:15px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-size:18px; line-height:1.6; letter-spacing: 0.34px;">Maintained total architectural stability across major host deployments into Adobe Express and Acrobat.</span></div>
       </div>
-    <div style="background: transparent; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-2); font-size: 17px">
-        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary); font-variant-numeric:tabular-nums;">Cultural shift at scale</div>
-        <div style="font-size:15px; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-size: 17px; letter-spacing: 0.34px;">Moved cross-functional platform teams from building in isolated product silos to authoring intentionally shared, nestable capabilities.</span></div>
-      </div><div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
-        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary); font-variant-numeric:tabular-nums;">Extensible foundation</div>
-        <div style="font-size:15px; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-size: 17px; letter-spacing: 0.34px;">Established the design taxonomy and system guardrails required to scale beyond pages into side panels, drawers, and inline surfaces without breaking core logic.</span></div>
-      </div><div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"></div>
+    <div style="background: transparent; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4); font-size:18px">
+        <div data-outcome-title="" style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1.2; letter-spacing:-0.02em; color:var(--accent-primary); font-variant-numeric:tabular-nums;">Cultural shift at scale</div>
+        <div style="font-size:15px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-size:18px; line-height:1.6; letter-spacing: 0.34px;">Moved cross-functional platform teams from building in isolated product silos to authoring intentionally shared, nestable capabilities.</span></div>
+      </div><div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-4);">
+        <div data-outcome-title="" style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1.2; letter-spacing:-0.02em; color:var(--accent-primary); font-variant-numeric:tabular-nums;">Extensible foundation</div>
+        <div style="font-size:15px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-size:18px; line-height:1.6; letter-spacing: 0.34px;">Established the design taxonomy and system guardrails required to scale beyond pages into side panels, drawers, and inline surfaces without breaking core logic.</span></div>
+      </div><div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"></div>
   </div>
 
-  <a data-wrap="" href="genstudio.dc.html" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-8); background:var(--bg-surface); padding:var(--space-12) 48px; text-decoration:none; transition:var(--transition-base);" style-hover="text-decoration:none; background:var(--accent-primary-surface)">
+  <a data-wrap="" data-next-project="" href="genstudio.dc.html" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-8); background:var(--bg-surface); padding:var(--space-12) 48px; text-decoration:none; transition:var(--transition-base);" style-hover="text-decoration:none; background:var(--accent-primary-surface)">
     <div style="display:flex; flex-direction:column; gap:var(--space-2);">
       <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Next project</div>
-      <div style="font-family:var(--font-display); font-size:32px; font-weight:700; letter-spacing:-0.02em; color:var(--fg);">Unify GenStudio at launch</div>
+      <div data-next-title="" style="font-family:var(--font-display); font-size:32px; font-weight:700; letter-spacing:-0.02em; color:var(--fg);">Unify GenStudio at launch</div>
     </div>
     <div data-cta="" style="font-size:15px; font-weight:600; color:var(--accent-primary); white-space:nowrap;">Read the case study →</div>
   </a>

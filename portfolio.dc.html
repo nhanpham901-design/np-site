@@ -24,7 +24,6 @@
   @media (max-width: 767px) {
     [data-page-title] { font-size: 48px !important; }
     [data-page-lede] { font-size: 18px !important; }
-    [data-meta-row] { grid-template-columns: repeat(2, 1fr) !important; }
   }
   @media (max-width: 1023px) {
     [data-stack] { grid-template-columns: 1fr !important; }
@@ -61,6 +60,23 @@
   @media (max-width: 576px) {
     [data-page-title] { font-size: 40px !important; }
   }
+
+
+  @media (max-width: 768px) {
+    [data-outcome-title] { font-size: 36px !important; }
+  }
+
+  @media (max-width: 767px) {
+    [data-next-project] { flex-direction: column !important; align-items: flex-start !important; gap: var(--space-4) !important; }
+  }
+
+  @media (max-width: 768px) {
+    [data-next-project] [data-next-title] { font-size: 28px !important; }
+  }
+
+  @media (max-width: 768px) {
+    [data-meta-row] { grid-template-columns: 1fr !important; }
+  }
 </style>
 </helmet>
 
@@ -91,19 +107,19 @@
     <div data-meta-row="" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:var(--space-6); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:var(--space-6) 0;">
       <div style="display:flex; flex-direction:column; gap:var(--space-2);">
         <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Role</div>
-        <div style="font-size:15px; color:var(--fg);">Designer, systems owner, editor</div>
+        <div style="font-size:18px; color:var(--fg);">Designer, systems owner, editor</div>
       </div>
       <div style="display:flex; flex-direction:column; gap:var(--space-2);">
         <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Partners</div>
-        <div style="font-size:15px; color:var(--fg);">Claude, Claude Design, Gemini as reviewer</div>
+        <div style="font-size:18px; color:var(--fg);">Claude, Claude Design, Gemini as reviewer</div>
       </div>
       <div style="display:flex; flex-direction:column; gap:var(--space-2);">
         <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Timeline</div>
-        <div style="font-size:15px; color:var(--fg);">About 10 weeks, in 1.5-hour windows, 2026</div>
+        <div style="font-size:18px; color:var(--fg);">About 10 weeks, in 1.5-hour windows, 2026</div>
       </div>
       <div style="display:flex; flex-direction:column; gap:var(--space-2);">
         <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Scope</div>
-        <div style="font-size:15px; color:var(--fg);">Design system, layout, AI workflow</div>
+        <div style="font-size:18px; color:var(--fg);">Design system, layout, AI workflow</div>
       </div>
     </div>
   </div>
@@ -112,29 +128,29 @@
 
     <div style="display:flex; flex-direction:column; gap:var(--space-4);">
       <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Overview</h2>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I’m returning as a Staff designer, and knowing when and how to use AI is now a core part of the craft. So I built my portfolio with agents, as practice and as proof.</div>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">My constraint was time: about an hour and a half a day, during my toddler’s nap. Agents handled production so that window went to the parts only I could do: context, judgment, and voice.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I’m returning as a Staff designer, and knowing when and how to use AI is now a core part of the craft. So I built my portfolio with agents, as practice and as proof.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">My constraint was time: about an hour and a half a day, during my toddler’s nap. Agents handled production so that window went to the parts only I could do: context, judgment, and voice.</div>
     </div>
 
     <div style="display:flex; flex-direction:column; gap:var(--space-4);">
       <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Finding a tool that respects small changes</h2>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">It took four false starts across Claude, Claude Design, and Google Stitch before the workflow held. Stitch regenerated entire pages when I only wanted to change one thing, didn’t follow direction well, and made inline editing painful. I stopped using it.</div>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">That set my criteria: a small change stays a small change, and I can edit in place. Claude Design met both.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">It took four false starts across Claude, Claude Design, and Google Stitch before the workflow held. Stitch regenerated entire pages when I only wanted to change one thing, didn’t follow direction well, and made inline editing painful. I stopped using it.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">That set my criteria: a small change stays a small change, and I can edit in place. Claude Design met both.</div>
     </div>
 
     <div style="display:flex; flex-direction:column; gap:var(--space-4);">
       <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Deciding what to leave out</h2>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I pulled years of work out of an unpublished portfolio, then cut most of it. Work from 2020 and earlier undersold the level I’m applying for, so I led with a few recent projects that show leadership and scope instead.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I pulled years of work out of an unpublished portfolio, then cut most of it. Work from 2020 and earlier undersold the level I’m applying for, so I led with a few recent projects that show leadership and scope instead.</div>
     </div>
 
     <div style="display:flex; flex-direction:column; gap:var(--space-4);">
       <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">A loose system that hardened as I built</h2>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I didn’t design the system up front. I started with a few strong principles and kept the rest loose, so the system could follow the work instead of blocking it.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">I didn’t design the system up front. I started with a few strong principles and kept the rest loose, so the system could follow the work instead of blocking it.</div>
       <div style="display:flex; flex-direction:column; gap:var(--space-4);">
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Principles first:</span> tokens for color, type, and spacing, plus a handful of rules, like accent never sitting next to primary.</div>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight: 600; color: var(--fg);">Name it when it repeats:</span> when I described a pattern twice, it got a name, like Feature card, Grid card, meta row, and identity eyebrow. The names gave the agent and I a shared vocabulary.</div>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Rules from real cases:</span> dark-mode contrast, breakpoints, and type hierarchy became rules only after a page broke them.</div>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">One source of truth:</span> the UI kit and the live site stay in sync on every change, documented in Foundations.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Principles first:</span> tokens for color, type, and spacing, plus a handful of rules, like accent never sitting next to primary.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight: 600; color: var(--fg);">Name it when it repeats:</span> when I described a pattern twice, it got a name, like Feature card, Grid card, meta row, and identity eyebrow. The names gave the agent and I a shared vocabulary.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">Rules from real cases:</span> dark-mode contrast, breakpoints, and type hierarchy became rules only after a page broke them.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;"><span style="font-weight:600; color:var(--fg);">One source of truth:</span> the UI kit and the live site stay in sync on every change, documented in Foundations.</div>
       </div>
       <div style="display:flex; flex-direction:column; gap:var(--space-3); margin-top:var(--space-4);">
         <div style="display:flex; flex-direction:column; gap:var(--space-5); background:var(--bg-surface); border-radius:var(--radius-lg); padding:var(--space-6);">
@@ -179,36 +195,36 @@
         </div>
         <div style="font-size:15px; line-height:1.6; color:var(--fg-tertiary); text-wrap:pretty;">One token set, two modes. Contrast rules were added once dark mode exposed them.</div>
       </div>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">This made the work faster and the system more durable, since every rule exists because something needed it.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">This made the work faster and the system more durable, since every rule exists because something needed it.</div>
     </div>
 
     <div style="display:flex; flex-direction:column; gap:var(--space-4);">
       <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Working with AI: it suggests, I decide</h2>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Gemini reviewed my copy and I critiqued its feedback, keeping only what was accurate to the work and true to my voice. Claude built, and I reverted freely when a direction didn’t hold.</div>
-      <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Early on, I gated larger changes behind formal review and approval. Working solo, reviewing as changes landed was faster, so I stopped. With a team, I’d bring the gates back.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Gemini reviewed my copy and I critiqued its feedback, keeping only what was accurate to the work and true to my voice. Claude built, and I reverted freely when a direction didn’t hold.</div>
+      <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Early on, I gated larger changes behind formal review and approval. Working solo, reviewing as changes landed was faster, so I stopped. With a team, I’d bring the gates back.</div>
     </div>
   </div>
 
   <div data-wrap-left="" style="padding:0 48px var(--space-16); display:flex; flex-direction:column; gap:var(--space-6); max-width:760px;">
     <h2 style="margin:0; font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Outcome</h2>
-    <div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
-        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary);">Principles first, completeness later</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">The system grew from a few rules into named components and documented standards.</div>
+    <div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-4);">
+        <div data-outcome-title="" style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1.2; letter-spacing:-0.02em; color:var(--accent-primary);">Principles first, completeness later</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">The system grew from a few rules into named components and documented standards.</div>
       </div>
-    <div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
-        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary);">Judgment stayed mine</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Every cut, copy decision, and design call was reviewed by me before it shipped.</div>
+    <div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-4);">
+        <div data-outcome-title="" style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1.2; letter-spacing:-0.02em; color:var(--accent-primary);">Judgment stayed mine</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Every cut, copy decision, and design call was reviewed by me before it shipped.</div>
       </div>
-    <div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-2);">
-        <div style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1; letter-spacing:-0.02em; color:var(--accent-primary);">Shipped in nap-time windows</div>
-        <div style="font-size:17px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">A published portfolio and a reusable design system, built an hour and a half at a time.</div>
+    <div style="background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-8); display:flex; flex-direction:column; gap:var(--space-4);">
+        <div data-outcome-title="" style="font-family:var(--font-display); font-size:48px; font-weight:700; line-height:1.2; letter-spacing:-0.02em; color:var(--accent-primary);">Shipped in nap-time windows</div>
+        <div style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">A published portfolio and a reusable design system, built an hour and a half at a time.</div>
       </div>
   </div>
 
-  <a data-wrap="" href="genstudio.dc.html" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-8); background:var(--bg-surface); padding:var(--space-12) 48px; text-decoration:none; transition:var(--transition-base);" style-hover="text-decoration:none; background:var(--accent-primary-surface)">
+  <a data-wrap="" data-next-project="" href="genstudio.dc.html" style="display:flex; align-items:center; justify-content:space-between; gap:var(--space-8); background:var(--bg-surface); padding:var(--space-12) 48px; text-decoration:none; transition:var(--transition-base);" style-hover="text-decoration:none; background:var(--accent-primary-surface)">
     <div style="display:flex; flex-direction:column; gap:var(--space-2);">
       <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em; color:var(--fg-tertiary);">Next project</div>
-      <div style="font-family:var(--font-display); font-size:32px; font-weight:700; letter-spacing:-0.02em; color:var(--fg);">Unify GenStudio at launch</div>
+      <div data-next-title="" style="font-family:var(--font-display); font-size:32px; font-weight:700; letter-spacing:-0.02em; color:var(--fg);">Unify GenStudio at launch</div>
     </div>
     <div data-cta="" style="font-size:15px; font-weight:600; color:var(--accent-primary); white-space:nowrap;">Read the case study →</div>
   </a>
