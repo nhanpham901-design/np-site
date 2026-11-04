@@ -29,7 +29,7 @@
       border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0 !important;
     }
     [data-card-title] { font-size: 22px !important; letter-spacing: -0.01em !important; }
-    [data-card-body] { font-size: 15px !important; }
+    [data-card-body] { font-size: 18px !important; }
     [data-portfolio-cover] img { object-position: 50% 85% !important; }
     [data-about-grid] { gap: var(--space-8) !important; }
     [data-about-grid] > img { max-width: 224px !important; }
@@ -76,6 +76,23 @@
   [data-eyebrow-slot] [data-eyebrow-nav] span { color: var(--accent-primary) !important; }
   a { color: var(--link); text-decoration: none; }
   a:hover { color: var(--link-hover); text-decoration: underline; }
+
+  /* Page margins: 48px default, 36px below 1024px, 24px below 768px. */
+  @media (max-width: 1023px) {
+    [data-wrap], [data-wrap-left] { padding-left: 36px !important; padding-right: 36px !important; }
+  }
+  @media (max-width: 767px) {
+    [data-wrap], [data-wrap-left] { padding-left: 24px !important; padding-right: 24px !important; }
+  }
+
+  @media (max-width: 1024px) {
+    [data-eyebrow-home] > a { font-size: 18px !important; }
+  }
+
+  @media (max-width: 576px) {
+    [data-page-title] { font-size: 40px !important; }
+  }
+
 </style>
 </helmet>
 
@@ -114,7 +131,7 @@
       <div data-featured-copy="" style="display:flex; flex-direction:column; gap:var(--space-4);">
         <div style="font-size:12px; font-weight:400; text-transform:uppercase; letter-spacing:0.08em; color:var(--fg-tertiary);">ADOBE · ZERO TO ONE · 2024</div>
         <div data-card-title="" style="font-family:var(--font-display); font-size:36px; font-weight:700; line-height:1.15; letter-spacing:-0.02em; color:var(--fg);">Unify GenStudio at launch<span data-lock="" style="color:var(--fg-tertiary);"><span aria-hidden="true" style="display: none; vertical-align: baseline; margin-left: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="11" rx="2.5"></rect><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"></path></svg></span></span></div>
-        <div data-card-body="" style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Established&nbsp;<span style="letter-spacing: 0.32px;">core system standards and component taxonomy for&nbsp;</span><span style="letter-spacing: 0.32px;">Adobe’s flagship generative AI product and aligned</span>&nbsp;cross-org teams to ship a unified experience in time for General Availability.</div>
+        <div data-card-body="" style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Established&nbsp;<span style="letter-spacing: 0.32px;">core system standards and component taxonomy for&nbsp;</span><span style="letter-spacing: 0.32px;">Adobe’s flagship generative AI product and aligned</span>&nbsp;cross-org teams to ship a unified experience in time for General Availability.</div>
       </div>
     </a>
 
@@ -125,7 +142,7 @@
       <div data-featured-copy="" style="display:flex; flex-direction:column; gap:var(--space-4);">
         <div style="font-size:12px; font-weight:400; text-transform:uppercase; letter-spacing:0.08em; color:var(--fg-tertiary);">ADOBE · DESIGN SYSTEMS ARCHITECTURE&nbsp; · 2023–2025</div>
         <div data-card-title="" style="font-family:var(--font-display); font-size:36px; font-weight:700; line-height:1.15; letter-spacing:-0.02em; color:var(--fg);">Scale cross-product composability</div>
-        <div data-card-body="" style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Standardized modular feature deployment across 3 core product surfaces and unlocked cross-app integration velocity while preserving design quality and architectural parity.</div>
+        <div data-card-body="" style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Standardized modular feature deployment across 3 core product surfaces and unlocked cross-app integration velocity while preserving design quality and architectural parity.</div>
       </div>
     </a>
 
@@ -136,7 +153,7 @@
       <div data-featured-copy="" style="display:flex; flex-direction:column; gap:var(--space-4);">
         <div style="font-size:12px; font-weight:400; text-transform:uppercase; letter-spacing:0.08em; color:var(--fg-tertiary);">PERSONAL · ZERO TO ONE · 2026</div>
         <div data-card-title="" style="font-family:var(--font-display); font-size:36px; font-weight:700; line-height:1.15; letter-spacing:-0.02em; color:var(--fg);">Create a portfolio with AI</div>
-        <div data-card-body="" style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Built this site’s layout and component architecture using a small set of durable principles to guide development with AI agents.</div>
+        <div data-card-body="" style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Built this site’s layout and component architecture using a small set of durable principles to guide development with AI agents.</div>
       </div>
     </a>
 
@@ -148,7 +165,7 @@
       <div data-featured-copy="" style="display:flex; flex-direction:column; gap:var(--space-4);">
         <div style="font-size:12px; font-weight:400; text-transform:uppercase; letter-spacing:0.08em; color:var(--fg-tertiary);">Expedia · ZERO TO ONE&nbsp;<span style="letter-spacing: 0.77px;">·</span>&nbsp;2020</div>
         <div data-card-title="" style="font-family:var(--font-display); font-size:36px; font-weight:700; line-height:1.15; letter-spacing:-0.02em; color:var(--fg);">Things to do on your trip</div>
-        <div data-card-body="" style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Resulted in 16% increase in click through rate and positive 7 day return rate</div>
+        <div data-card-body="" style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Resulted in 16% increase in click through rate and positive 7 day return rate</div>
       </div>
     </a>
 
@@ -159,7 +176,7 @@
         </div>
         <div style="font-size:12px; font-weight:400; text-transform:uppercase; letter-spacing:0.08em; color:var(--fg-tertiary);">EXPEDIA · ZERO TO ONE · 2019</div>
         <div style="font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">ALICE pilot</div>
-        <div data-card-body="" style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Brought customers closer to Expedia's hoteliers, and gave hotels a channel to deliver on loyalty in a way a points balance never could</div>
+        <div data-card-body="" style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Brought customers closer to Expedia's hoteliers, and gave hotels a channel to deliver on loyalty in a way a points balance never could</div>
       </a>
       <a href="cars.dc.html" style="display:flex; flex-direction:column; gap:var(--space-4); background:transparent; border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-6); text-decoration:none; transition:var(--transition-base);" style-hover="border-color:var(--border-strong); transform:translateY(-2px); text-decoration:none">
         <div style="margin:calc(-1 * var(--space-6)) calc(-1 * var(--space-6)) 0; border-radius:calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0; overflow:hidden; height:190px; background:var(--neutral-100);">
@@ -167,7 +184,7 @@
         </div>
         <div style="font-size:12px; font-weight:400; text-transform:uppercase; letter-spacing:0.08em; color:var(--fg-tertiary);">EXPEDIA · PRODUCT REDESIGN RELEASE · 2019</div>
         <div style="font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-0.01em; color:var(--fg);">Cars itinerary redesign</div>
-        <div data-card-body="" style="font-size:16px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Outperformed benchmarks on engagement, comprehension, and discoverability in qualitative and quantitative studies.</div>
+        <div data-card-body="" style="font-size:18px; line-height:1.6; color:var(--fg-secondary); text-wrap:pretty;">Outperformed benchmarks on engagement, comprehension, and discoverability in qualitative and quantitative studies.</div>
       </a>
     </div>
 

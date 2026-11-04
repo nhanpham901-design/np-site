@@ -47,6 +47,22 @@
   [data-eyebrow-slot] [data-eyebrow-nav] span { color: var(--accent-primary) !important; }
   a { color: var(--link); text-decoration: none; }
   a:hover { color: var(--link-hover); text-decoration: underline; }
+
+  /* Page margins: 48px default, 36px below 1024px, 24px below 768px. */
+  @media (max-width: 1023px) {
+    [data-wrap], [data-wrap-left] { padding-left: 36px !important; padding-right: 36px !important; }
+  }
+  @media (max-width: 767px) {
+    [data-wrap], [data-wrap-left] { padding-left: 24px !important; padding-right: 24px !important; }
+  }
+
+  @media (max-width: 1024px) {
+    [data-eyebrow-home] > a { font-size: 18px !important; }
+  }
+
+  @media (max-width: 576px) {
+    [data-page-title] { font-size: 40px !important; }
+  }
 </style>
 </helmet>
 
